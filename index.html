@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Grain de Cèdre (maquette) · Restaurant libanais à Sens (Yonne)</title>
+<meta name="description" content="Maquette de site vitrine pour Grain de Cèdre, restaurant libanais au 75 Grande Rue à Sens : mezzes, assiettes du chef, menu découverte et vins libanais, servis dans une cour arborée en plein centre-ville.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Grain de Cèdre (maquette) · Restaurant libanais à Sens">
+<meta property="og:description" content="Maquette non officielle. Cuisine libanaise et terrasse dans une cour arborée, 75 Grande Rue à Sens.">
+<meta name="theme-color" content="#f4f1ea">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e4a3a'/%3E%3Cpath d='M32 9 18 27h7L13 41h9L9 54h46L42 41h9L39 27h7z' fill='%23f4f1ea'/%3E%3Crect x='29' y='52' width='6' height='6' fill='%23f4f1ea'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Karla:wght@400;600;700&display=swap">
+<style>
+/* ==========================================================
+   Grain de Cèdre — maquette « Cour libanaise en plein Sens »
+   Mobile d'abord (~360 px), enrichi pour tablette et bureau.
+   ========================================================== */
+:root{
+  --cedre-950:#0f2a20;
+  --cedre-900:#163a2d;
+  --cedre-800:#1e4a3a;
+  --cedre-700:#29604b;
+  --cedre-500:#4f8a6d;
+  --cedre-300:#9cc3ad;
+  --cedre-100:#e2eee6;
+  --pierre-50:#fbfaf6;
+  --pierre:#f4f1ea;
+  --pierre-200:#e9e3d6;
+  --pierre-300:#d9d0bd;
+  --encre:#1b2622;
+  --encre-douce:#4c5852;
+  --sumac:#9b2f2f;
+  --sumac-clair:#f2b3a6;
+  --zaatar:#a8822e;
+
+  --police-titre:"Amiri", Georgia, "Times New Roman", serif;
+  --police-texte:"Karla", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --entete-h:4rem;
+  --barre-h:4.5rem;
+  --rayon:1.1rem;
+  --ombre:0 1px 2px rgb(22 58 45 / .06), 0 12px 26px -16px rgb(22 58 45 / .35);
+  /* Motif d'étoiles à huit branches, façon carreaux de ciment */
+  --motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%231e4a3a' stroke-opacity='.07' stroke-width='1.2'%3E%3Crect x='18' y='18' width='20' height='20'/%3E%3Crect x='18' y='18' width='20' height='20' transform='rotate(45 28 28)'/%3E%3C/g%3E%3C/svg%3E");
+  --motif-clair:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23f4f1ea' stroke-opacity='.07' stroke-width='1.2'%3E%3Crect x='18' y='18' width='20' height='20'/%3E%3Crect x='18' y='18' width='20' height='20' transform='rotate(45 28 28)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ---------- Base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:calc(var(--entete-h) + .5rem);scroll-padding-bottom:calc(var(--barre-h) + 1rem)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;font-family:var(--police-texte);font-size:1rem;line-height:1.65;color:var(--encre);background:var(--pierre);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--police-titre);font-weight:700;line-height:1.1;margin:0;color:var(--cedre-900);text-wrap:balance}
+p,figure,dl,dd,address{margin:0}
+address{font-style:normal}
+ul{margin:0;padding:0;list-style:none}
+a{color:var(--cedre-700);text-decoration-thickness:.08em;text-underline-offset:.2em}
+a:hover{color:var(--cedre-900)}
+:focus-visible{outline:3px solid var(--sumac);outline-offset:3px;border-radius:.4rem}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+main:focus{outline:none}
+.sprite{position:absolute;width:0;height:0;overflow:hidden}
+.ic{display:inline-block;width:1.25rem;height:1.25rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
+.conteneur{width:min(100% - 2rem, 70rem);margin-inline:auto}
+.a-confirmer{font-weight:700;color:var(--sumac)}
+
+/* ---------- Bandeau maquette ---------- */
+.bandeau{background:var(--cedre-100);color:var(--cedre-900);border-bottom:1px solid rgb(22 58 45 / .08)}
+.bandeau p{display:flex;justify-content:center;align-items:center;gap:.5rem;padding:.45rem 1rem;font-size:.875rem;line-height:1.4;text-align:center}
+.bandeau .ic{width:1rem;height:1rem;color:var(--cedre-700)}
+
+/* ---------- Lien d'évitement ---------- */
+.evitement{position:absolute;left:1rem;top:-6rem;z-index:100;padding:.75rem 1.25rem;border-radius:999px;background:var(--cedre-900);color:var(--pierre-50);font-weight:700;text-decoration:none}
+.evitement:focus{top:.75rem;color:var(--pierre-50)}
+
+/* ---------- En-tête ---------- */
+.entete{position:sticky;top:0;z-index:40;background:rgb(244 241 234 / .95);border-bottom:1px solid rgb(22 58 45 / .1)}
+@supports ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
+  .entete{background:rgb(244 241 234 / .85);-webkit-backdrop-filter:blur(12px) saturate(1.3);backdrop-filter:blur(12px) saturate(1.3)}
+}
+.entete__barre{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:var(--entete-h)}
+.logo{display:inline-flex;align-items:center;gap:.65rem;min-height:2.75rem;color:var(--cedre-900);text-decoration:none}
+.logo:hover{color:var(--cedre-900)}
+.logo__pastille{display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--cedre-800);color:var(--pierre)}
+.logo__pastille svg{width:1.45rem;height:1.45rem;fill:currentColor}
+.logo__texte{display:flex;flex-direction:column;line-height:1}
+.logo__nom{font-family:var(--police-titre);font-size:1.45rem;font-weight:700}
+.logo__sous{display:none;margin-top:.25rem;font-size:.75rem;font-weight:700;letter-spacing:.04em;color:var(--encre-douce)}
+
+.nav-bouton{display:none;align-items:center;justify-content:center;gap:.5rem;min-width:2.75rem;min-height:2.75rem;padding:.5rem .7rem;border:1.5px solid rgb(22 58 45 / .22);border-radius:999px;background:var(--pierre-50);color:var(--cedre-900);font:700 .9375rem var(--police-texte);cursor:pointer}
+.js .nav-bouton{display:inline-flex}
+.nav-bouton__libelle{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.nav-bouton .ic-croix{display:none}
+.nav-bouton[aria-expanded="true"] .ic-traits{display:none}
+.nav-bouton[aria-expanded="true"] .ic-croix{display:inline-block}
+
+.nav__liste{display:flex;flex-wrap:wrap;gap:.25rem}
+.nav__lien{display:flex;align-items:center;min-height:2.75rem;padding:.5rem .8rem;border-radius:.8rem;color:var(--cedre-900);font-weight:700;text-decoration:none}
+.nav__lien:hover{background:var(--cedre-100);color:var(--cedre-900)}
+.nav__tel{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:.5rem 1rem;border-radius:999px;background:var(--cedre-800);color:var(--pierre-50);font-weight:700;text-decoration:none}
+.nav__tel:hover{background:var(--cedre-900);color:var(--pierre-50)}
+/* Sans JS : la navigation passe sous le logo */
+.entete__barre{flex-wrap:wrap;padding-block:.5rem}
+.nav{flex-basis:100%}
+.js .entete__barre{flex-wrap:nowrap;padding-block:0}
+.js .nav{position:absolute;top:100%;left:0;right:0;max-height:calc(100dvh - 4rem);overflow-y:auto;padding:.5rem 1rem 1.25rem;background:var(--pierre-50);border-bottom:1px solid rgb(22 58 45 / .12);box-shadow:0 24px 30px -24px rgb(22 58 45 / .5);visibility:hidden;opacity:0;transform:translateY(-.5rem);transition:opacity .2s ease,transform .2s ease,visibility 0s .2s}
+.js .nav.est-ouvert{visibility:visible;opacity:1;transform:none;transition:opacity .2s ease,transform .2s ease}
+.js .nav__liste{flex-direction:column;flex-wrap:nowrap;gap:0;width:min(100%, 40rem);margin-inline:auto}
+.js .nav__lien{min-height:3.25rem;padding-inline:.25rem;border-radius:0;border-bottom:1px solid rgb(22 58 45 / .12);font-family:var(--police-titre);font-size:1.4rem}
+.js .nav__lien:hover{background:none;color:var(--cedre-700)}
+.js .nav__tel{justify-content:center;width:100%;min-height:3rem;margin-top:1rem}
+
+/* ---------- Boutons ---------- */
+.bouton{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3rem;padding:.75rem 1.4rem;border-radius:999px;font-weight:700;font-size:1rem;line-height:1.2;text-align:center;text-decoration:none;transition:background-color .2s ease,transform .2s ease}
+.bouton--plein{background:var(--cedre-800);color:var(--pierre-50);box-shadow:0 10px 20px -12px rgb(22 58 45 / .8)}
+.bouton--plein:hover{background:var(--cedre-900);color:var(--pierre-50);transform:translateY(-1px)}
+.bouton--contour{border:2px solid rgb(30 74 58 / .5);color:var(--cedre-800);background:rgb(251 250 246 / .6)}
+.bouton--contour:hover{border-color:var(--cedre-800);background:var(--cedre-100);color:var(--cedre-900)}
+.bouton--clair{background:var(--pierre);color:var(--cedre-900)}
+.bouton--clair:hover{background:var(--pierre-50);color:var(--cedre-900)}
+
+/* ---------- Titres de section ---------- */
+.section{padding-block:clamp(2.75rem, 9vw, 6rem)}
+.tete{max-width:42rem;margin-bottom:clamp(1.5rem, 5vw, 2.75rem)}
+.surtitre{display:flex;align-items:center;gap:.6rem;margin-bottom:.5rem;font-size:.8125rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sumac)}
+.surtitre::before{content:"";width:1.75rem;height:2px;background:currentColor}
+.tete h2{font-size:clamp(2.2rem, 5.5vw + 1rem, 3.4rem)}
+.chapo{margin-top:1rem;font-size:1.125rem;line-height:1.6;color:var(--encre-douce)}
+
+/* ---------- Emplacements photo (à fournir) ---------- */
+.photo{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:4/3;max-height:50vh;max-height:50svh;border-radius:var(--rayon);background:var(--motif) 0 0/56px 56px, linear-gradient(160deg, var(--pierre-200), var(--cedre-100));box-shadow:inset 0 0 0 1px rgb(22 58 45 / .08), var(--ombre)}
+.photo::before{content:"";position:absolute;inset:.6rem;z-index:-1;border:1.5px dashed rgb(30 74 58 / .25);border-radius:calc(var(--rayon) - .4rem)}
+.photo__art{position:absolute;inset:0;z-index:-1;display:grid;place-items:center;color:var(--cedre-700)}
+.photo__art .ic{width:min(22%, 4.5rem);height:auto;aspect-ratio:1;stroke-width:1.1;opacity:.6;transform:translateY(-14%)}
+.photo figcaption{position:absolute;left:.85rem;right:.85rem;bottom:.85rem;display:flex;align-items:flex-start;gap:.55rem;padding:.55rem .85rem;border-radius:.8rem;background:rgb(251 250 246 / .94);font-size:.9375rem;line-height:1.4}
+.photo figcaption .ic{width:1.1rem;height:1.1rem;margin-top:.1rem;color:var(--cedre-700)}
+.photo__mention{font-weight:700;color:var(--cedre-800)}
+
+/* ---------- Accueil ---------- */
+.accueil{position:relative;overflow-x:clip;padding-block:2rem 3rem;background:var(--motif) 0 0/56px 56px, radial-gradient(50rem 26rem at 100% 0%, rgb(79 138 109 / .18), transparent 62%), var(--pierre)}
+.accueil__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:2.5rem;align-items:center}
+.accueil__pastille{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .9rem;border-radius:999px;background:var(--pierre-50);border:1px solid rgb(22 58 45 / .14);font-size:.8125rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cedre-800)}
+.accueil__titre{margin-top:1rem;font-size:clamp(3.4rem, 15vw, 6.75rem);line-height:.92;letter-spacing:-.01em}
+.accueil__titre span{display:block;color:var(--cedre-700)}
+.accueil__lieu{display:flex;align-items:flex-start;gap:.5rem;margin-top:1.1rem;font-weight:700;color:var(--cedre-800)}
+.accueil__lieu .ic{margin-top:.2rem;color:var(--sumac)}
+.accueil__note{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.25rem .5rem;margin-top:.8rem;padding:.35rem .85rem;border-radius:999px;border:1px solid rgb(22 58 45 / .16);background:rgb(251 250 246 / .75);font-size:.875rem;font-weight:700;color:var(--encre-douce)}
+.accueil__note .etoiles{color:var(--zaatar);letter-spacing:.05em}
+.accueil__intro{max-width:34rem;margin-top:1.25rem;font-size:1.125rem;line-height:1.65}
+.accueil__actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.accueil__actions .bouton{flex:1 1 100%}
+.accueil__fiche{display:grid;gap:.85rem;max-width:34rem;margin-top:1.75rem;padding-top:1.25rem;border-top:1px solid rgb(22 58 45 / .15);color:var(--encre-douce)}
+.accueil__fiche p{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem}
+.accueil__fiche .ic{width:1.1rem;height:1.1rem;color:var(--cedre-700)}
+.accueil__itineraire{display:inline-flex;align-items:center;gap:.4rem;min-height:2.75rem;padding:0 1rem;border-radius:999px;background:var(--cedre-100);color:var(--cedre-900);font-weight:700;text-decoration:none}
+.accueil__itineraire:hover{background:var(--cedre-300);color:var(--cedre-900)}
+.accueil__visuel{position:relative;width:100%;max-width:22rem;margin-inline:auto}
+.photo--arche{aspect-ratio:4/5;border-radius:12rem 12rem var(--rayon) var(--rayon)}
+.photo--arche::before{border-radius:11.5rem 11.5rem calc(var(--rayon) - .4rem) calc(var(--rayon) - .4rem)}
+
+/* ---------- La cuisine ---------- */
+.cuisine{background:var(--pierre-50);border-block:1px solid rgb(22 58 45 / .08)}
+.plats{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.plat{display:grid;grid-template-columns:auto 1fr;align-items:start;gap:.2rem 1rem;padding:1.2rem 1.25rem;border-radius:var(--rayon);background:var(--pierre);border:1px solid rgb(22 58 45 / .1)}
+.plat__icone{grid-row:1 / span 3;display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;background:var(--cedre-100);color:var(--cedre-800)}
+.plat__icone .ic{width:1.5rem;height:1.5rem}
+.plat h3{font-size:1.45rem}
+.plat p{color:var(--encre-douce)}
+.plat__prix{font-size:.9rem}
+.plat--vedette{background:var(--cedre-800);border-color:transparent;background-image:var(--motif-clair);background-size:56px 56px}
+.plat--vedette h3{color:var(--pierre-50)}
+.plat--vedette p{color:#d5e3da}
+.plat--vedette .plat__icone{background:var(--pierre);color:var(--cedre-900)}
+.plat--vedette .a-confirmer{color:var(--sumac-clair)}
+.carte-a-venir{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-top:1.5rem;padding:1.1rem 1.25rem;border:1.5px dashed rgb(155 47 47 / .35);border-radius:var(--rayon);background:rgb(155 47 47 / .04)}
+.carte-a-venir p{max-width:36rem}
+
+/* ---------- La cour ---------- */
+.cour__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem}
+.cour__photos{display:grid;gap:1rem}
+.atouts{display:grid;gap:.75rem;margin-top:1.5rem}
+.atouts li{display:flex;align-items:flex-start;gap:.75rem;line-height:1.45}
+.atouts .ic{width:1.5rem;height:1.5rem;margin-top:.05rem;color:var(--cedre-700)}
+.acces{margin-top:1.75rem;padding:1.1rem 1.25rem;border-radius:var(--rayon);background:var(--cedre-100);color:var(--cedre-900)}
+.acces h3{font-size:1.35rem;margin-bottom:.35rem}
+.groupes{margin-top:1rem;padding:1.1rem 1.25rem;border-radius:var(--rayon);border:1px solid rgb(22 58 45 / .12);background:var(--pierre-50)}
+.groupes h3{font-size:1.35rem;margin-bottom:.35rem}
+
+/* ---------- Infos pratiques ---------- */
+.infos{background:var(--pierre-200)}
+.infos__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.carte-info{padding:1.2rem 1.25rem 1.3rem;border-radius:var(--rayon);background:var(--pierre-50);border:1px solid rgb(22 58 45 / .1);box-shadow:var(--ombre)}
+.carte-info__tete{display:flex;align-items:center;gap:.8rem;margin-bottom:.85rem}
+.rond{display:grid;place-items:center;flex:none;width:2.75rem;height:2.75rem;border-radius:50%;background:var(--cedre-100);color:var(--cedre-800)}
+.rond .ic{width:1.35rem;height:1.35rem}
+.carte-info h3{font-size:1.4rem}
+.carte-info address{font-size:1.125rem;font-weight:700;line-height:1.45;color:var(--cedre-900)}
+.carte-info__note{margin-top:.35rem;color:var(--encre-douce)}
+.carte-info__plan{display:block;width:100%;aspect-ratio:4/3;max-height:18rem;margin-top:1rem;border:0;border-radius:.8rem;background:var(--pierre-200)}
+.carte-info .bouton{margin-top:1.1rem}
+.puces{display:flex;flex-wrap:wrap;gap:.5rem}
+.puces li{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .85rem;border-radius:999px;background:var(--cedre-100);color:var(--cedre-900);font-weight:700;font-size:.9375rem}
+.puces .ic{width:1.05rem;height:1.05rem}
+
+.horaires{width:100%;border-collapse:collapse}
+.horaires caption{text-align:left;margin-bottom:.5rem}
+.horaires th,.horaires td{padding:.55rem .35rem;border-bottom:1px solid rgb(22 58 45 / .1);text-align:left;font-weight:400;vertical-align:top}
+.horaires tr:last-child th,.horaires tr:last-child td{border-bottom:0}
+.horaires th{color:var(--encre-douce)}
+.horaires td{text-align:right;font-weight:700;color:var(--cedre-900);font-variant-numeric:tabular-nums}
+.horaires .ferme td{color:var(--sumac)}
+.horaires .aujourdhui{background:var(--cedre-100)}
+.horaires .aujourdhui th{font-weight:700;color:var(--cedre-900)}
+.aujourdhui__mot{display:inline-block;margin-left:.4rem;padding:0 .5rem;border-radius:999px;background:var(--cedre-800);color:var(--pierre-50);font-size:.75rem;font-weight:700;letter-spacing:.04em}
+
+/* ---------- Contact ---------- */
+.contact{background:var(--cedre-900);background-image:var(--motif-clair), radial-gradient(50rem 26rem at 100% 0%, rgb(79 138 109 / .28), transparent 60%);background-size:56px 56px, auto;color:var(--pierre)}
+.contact .tete h2{color:var(--pierre-50)}
+.contact .surtitre{color:var(--sumac-clair)}
+.contact .chapo{color:#d5e3da}
+.contact :focus-visible{outline-color:var(--pierre)}
+.contact__cartes{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.contact-carte{display:flex;flex-direction:column;align-items:flex-start;gap:.3rem;height:100%;padding:1.5rem 1.4rem;border-radius:var(--rayon);background:rgb(244 241 234 / .06);border:1px solid rgb(244 241 234 / .18);color:var(--pierre);text-decoration:none;transition:background-color .2s ease,transform .2s ease}
+a.contact-carte:hover{color:var(--pierre);background:rgb(244 241 234 / .12);transform:translateY(-2px)}
+.contact-carte__icone{display:grid;place-items:center;width:3rem;height:3rem;margin-bottom:.6rem;border-radius:50%;background:var(--pierre);color:var(--cedre-900)}
+.contact-carte__icone .ic{width:1.4rem;height:1.4rem}
+.contact-carte__type{font-size:.8125rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cedre-300)}
+.contact-carte__valeur{font-family:var(--police-titre);font-size:1.7rem;font-weight:700;line-height:1.2;color:var(--pierre-50)}
+.contact-carte__valeur--petit{font-family:var(--police-texte);font-size:1.0625rem}
+.contact-carte__action{display:inline-flex;align-items:center;gap:.45rem;margin-top:auto;padding-top:1rem;font-weight:700;color:var(--sumac-clair)}
+.contact-carte__action .ic{width:1.1rem;height:1.1rem}
+
+/* ---------- Pied de page ---------- */
+.pied{padding-block:2.5rem calc(1.5rem + var(--barre-h) + env(safe-area-inset-bottom, 0px));background:var(--cedre-950);color:#c9d6ce}
+.pied a{color:var(--pierre-50)}
+.pied :focus-visible{outline-color:var(--pierre)}
+.pied .logo{color:var(--pierre-50)}
+.pied .logo__sous{color:#a9bcb1}
+.pied__bas{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 1.5rem;margin-top:1.75rem;padding-top:1.25rem;border-top:1px solid rgb(244 241 234 / .12)}
+.pied__bas p{max-width:44rem}
+.pied__haut{display:inline-flex;align-items:center;gap:.4rem;min-height:2.75rem;font-weight:700;text-decoration:none}
+.pied__haut .ic{width:1rem;height:1rem}
+
+/* ---------- Barre d'actions (téléphone et tablette) ---------- */
+.barre-actions{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:.5rem;padding:.5rem .75rem calc(.5rem + env(safe-area-inset-bottom, 0px));background:rgb(251 250 246 / .96);border-top:1px solid rgb(22 58 45 / .12)}
+.barre-actions a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.2rem;min-height:3.5rem;padding:.35rem .25rem;border-radius:1rem;background:var(--cedre-100);color:var(--cedre-900);font-size:.8125rem;font-weight:700;line-height:1.1;text-align:center;text-decoration:none}
+.barre-actions .ic{width:1.35rem;height:1.35rem}
+.barre-actions .barre-actions__appel{background:var(--cedre-800);color:var(--pierre-50)}
+
+/* ---------- Apparition douce ---------- */
+@media (prefers-reduced-motion:no-preference){
+  .accueil__texte > *{animation:monte .7s cubic-bezier(.2,.7,.2,1) both}
+  .accueil__texte > :nth-child(2){animation-delay:.06s}
+  .accueil__texte > :nth-child(3){animation-delay:.12s}
+  .accueil__texte > :nth-child(4){animation-delay:.18s}
+  .accueil__texte > :nth-child(5){animation-delay:.24s}
+  .accueil__visuel{animation:monte .9s .15s cubic-bezier(.2,.7,.2,1) both}
+}
+@keyframes monte{from{transform:translateY(12px)}to{transform:none}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+
+/* ---------- Dès 18em : numéros et horaires insécables ---------- */
+@media (min-width:18em){
+  .nowrap,.nav__tel,.horaires td{white-space:nowrap}
+}
+/* ---------- Sous 15em (texte très agrandi) : rien ne déborde ---------- */
+@media not all and (min-width:15em){
+  body{overflow-wrap:anywhere}
+  .barre-actions{display:none}
+  .pied{padding-bottom:1.5rem}
+  .entete .logo__texte{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+  .accueil__titre{font-size:min(3.4rem, 30vw)}
+  .tete h2{font-size:min(2.2rem, 18vw)}
+  .plat{grid-template-columns:minmax(0,1fr)}
+  .plat__icone{grid-row:auto}
+  .photo figcaption{position:relative;inset:auto;margin:.85rem}
+  .photo{display:flex;flex-direction:column;justify-content:flex-end;overflow:visible}
+}
+
+/* ---------- Petits écrans confortables ---------- */
+@media (min-width:22.5em){
+  .nav-bouton{padding-inline:.85rem 1rem}
+  .nav-bouton__libelle{position:static;width:auto;height:auto;overflow:visible;clip:auto;clip-path:none}
+}
+
+/* ---------- Tablette ---------- */
+@media (min-width:30em){
+  :root{--barre-h:3.75rem}
+  .logo__sous{display:block}
+  .accueil__actions .bouton{flex:0 0 auto}
+  .barre-actions a{flex-direction:row;gap:.5rem;min-height:2.75rem}
+}
+@media (min-width:40em){
+  .plats{grid-template-columns:1fr 1fr}
+  .plat--vedette{grid-column:1 / -1}
+  .cour__photos{grid-template-columns:1.4fr 1fr}
+  .cour__photos .photo:last-child{aspect-ratio:auto}
+}
+@media (min-width:48em){
+  .infos__grille{grid-template-columns:1fr 1fr}
+  .carte-info--horaires{grid-row:1 / span 2}
+  .contact__cartes{grid-template-columns:repeat(3, 1fr)}
+}
+
+/* ---------- Bureau ---------- */
+@media (min-width:60em){
+  :root{--entete-h:4.5rem}
+  html{scroll-padding-bottom:0}
+  body{font-size:1.0625rem}
+  .barre-actions{display:none}
+  .pied{padding-bottom:1.5rem}
+  .js .nav-bouton{display:none}
+  .nav,.js .nav,.js .nav.est-ouvert{position:static;flex-basis:auto;max-height:none;overflow:visible;padding:0;background:none;border:0;box-shadow:none;visibility:visible;opacity:1;transform:none;transition:none}
+  .entete__barre{flex-wrap:nowrap;padding-block:0}
+  .nav__liste,.js .nav__liste{flex-direction:row;flex-wrap:nowrap;align-items:center;gap:.15rem;width:auto}
+  .nav__lien,.js .nav__lien{min-height:2.75rem;padding:.5rem .8rem;border:0;border-radius:999px;font-family:var(--police-texte);font-size:.9688rem}
+  .nav__lien:hover,.js .nav__lien:hover{background:var(--cedre-100)}
+  .nav__lien[aria-current]{color:var(--sumac)}
+  .nav__tel,.js .nav__tel{width:auto;margin:0 0 0 .6rem}
+  .accueil{padding-block:4rem 5rem}
+  .accueil__grille{grid-template-columns:minmax(0, 1.15fr) minmax(0, .85fr);gap:3.5rem}
+  .plats{grid-template-columns:repeat(3, 1fr)}
+  .plat--vedette{grid-column:1 / span 2;grid-row:span 1}
+  .cour__grille{grid-template-columns:minmax(0, 1.1fr) minmax(0, .9fr);gap:3.5rem;align-items:start}
+  .cour__photos{grid-template-columns:1fr;position:sticky;top:6rem}
+}
+@media print{
+  .entete,.barre-actions,.nav-bouton,.carte-info__plan{display:none}
+  .pied{padding-bottom:1.5rem}
+}
+</style>
+<script>
+/* Script minimal : panneau de navigation, jour courant dans les horaires, rubrique active. */
+document.documentElement.classList.add('js');
+document.addEventListener('DOMContentLoaded', function () {
+  var ligne = document.querySelector('.horaires [data-jour="' + new Date().getDay() + '"]');
+  if (ligne) {
+    ligne.classList.add('aujourdhui');
+    ligne.setAttribute('aria-current', 'date');
+    ligne.cells[0].insertAdjacentHTML('beforeend', ' <span class="aujourdhui__mot">aujourd\'hui</span>');
+  }
+  var entete = document.querySelector('.entete');
+  var bouton = document.querySelector('.nav-bouton');
+  var nav = document.getElementById('navigation');
+  if (!entete || !bouton || !nav) return;
+  function basculer(ouvrir, rendreFocus) {
+    bouton.setAttribute('aria-expanded', ouvrir ? 'true' : 'false');
+    nav.classList.toggle('est-ouvert', ouvrir);
+    if (!ouvrir && rendreFocus) bouton.focus();
+  }
+  bouton.addEventListener('click', function () { basculer(bouton.getAttribute('aria-expanded') !== 'true', false); });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) basculer(false, false); });
+  nav.addEventListener('focusout', function (e) {
+    var vers = e.relatedTarget;
+    if (vers && vers !== bouton && !nav.contains(vers) && nav.classList.contains('est-ouvert')) basculer(false, false);
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && nav.classList.contains('est-ouvert')) basculer(false, true); });
+  document.addEventListener('pointerdown', function (e) { if (nav.classList.contains('est-ouvert') && !entete.contains(e.target)) basculer(false, false); });
+  if (!('IntersectionObserver' in window)) return;
+  var liens = nav.querySelectorAll('.nav__lien');
+  var observateur = new IntersectionObserver(function (entrees) {
+    entrees.forEach(function (entree) {
+      if (!entree.isIntersecting) return;
+      liens.forEach(function (lien) {
+        if (lien.hash === '#' + entree.target.id) lien.setAttribute('aria-current', 'location');
+        else lien.removeAttribute('aria-current');
+      });
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  liens.forEach(function (lien) {
+    var cible = document.getElementById(lien.hash.slice(1));
+    if (cible) observateur.observe(cible);
+  });
+});
+</script>
+</head>
+<body>
+<aside class="bandeau" id="haut" aria-label="À propos de cette page">
+  <p><svg class="ic" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.8v.01"/></svg><span>Maquette proposée par Nathan – ce n'est pas le site officiel de Grain de Cèdre</span></p>
+</aside>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <symbol id="cedre" viewBox="0 0 64 64"><path d="M32 6 17 26h7L12 41h9L8 55h48L43 41h9L40 26h7z"/><rect x="29" y="54" width="6" height="7"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-horloge" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-fleche" viewBox="0 0 24 24"><path d="M3 11 21 3l-8 18-2-8z"/></symbol>
+  <symbol id="i-photo" viewBox="0 0 24 24"><path d="M4 7h3l2-3h6l2 3h3v13H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-assiette" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.5"/></symbol>
+  <symbol id="i-mezze" viewBox="0 0 24 24"><circle cx="7" cy="8" r="3.5"/><circle cx="17" cy="8" r="3.5"/><circle cx="7" cy="17" r="3.5"/><circle cx="17" cy="17" r="3.5"/></symbol>
+  <symbol id="i-feuille" viewBox="0 0 24 24"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15z"/><path d="M5 19 13 11"/></symbol>
+  <symbol id="i-verre" viewBox="0 0 24 24"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0zM12 14v7M8 21h8"/></symbol>
+  <symbol id="i-dessert" viewBox="0 0 24 24"><path d="M4 13h16l-2 7H6zM12 13c0-4 2-6 5-7M8 13c0-3 1-5 3-6"/></symbol>
+  <symbol id="i-etoile" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+  <symbol id="i-arbre" viewBox="0 0 24 24"><path d="M12 21v-6M12 15c-4 0-7-2.5-7-6a7 7 0 0 1 14 0c0 3.5-3 6-7 6z"/></symbol>
+  <symbol id="i-vent" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7"/></symbol>
+  <symbol id="i-soleil" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></symbol>
+  <symbol id="i-groupe" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.2-5.5 5-5.5s5 2.2 5 5.5M14 20c0-2.6 1.3-4.5 3-4.5s3 1.9 3 4.5"/></symbol>
+  <symbol id="i-carte" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-couverts" viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 1-3 4-3 7h3v11"/></symbol>
+  <symbol id="i-calendrier" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-traits" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-croix" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-haut" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+</svg>
+
+<header class="entete">
+  <div class="conteneur entete__barre">
+    <a class="logo" href="#haut">
+      <span class="logo__pastille" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><use href="#cedre"/></svg></span>
+      <span class="logo__texte"><span class="logo__nom">Grain de Cèdre</span><span class="logo__sous">Restaurant libanais · Sens</span></span>
+    </a>
+    <button class="nav-bouton" type="button" aria-expanded="false" aria-controls="navigation">
+      <svg class="ic ic-traits" aria-hidden="true" focusable="false"><use href="#i-traits"/></svg>
+      <svg class="ic ic-croix" aria-hidden="true" focusable="false"><use href="#i-croix"/></svg>
+      <span class="nav-bouton__libelle">Rubriques</span>
+    </button>
+    <nav class="nav" id="navigation" aria-label="Navigation principale">
+      <ul class="nav__liste" role="list">
+        <li><a class="nav__lien" href="#accueil">Accueil</a></li>
+        <li><a class="nav__lien" href="#cuisine">La cuisine</a></li>
+        <li><a class="nav__lien" href="#cour">La cour</a></li>
+        <li><a class="nav__lien" href="#infos">Infos pratiques</a></li>
+        <li><a class="nav__lien" href="#contact">Contact</a></li>
+        <li><a class="nav__tel" href="tel:+33986225666"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span class="sr-only">Appeler le </span><span class="nowrap">09 86 22 56 66</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu" tabindex="-1">
+
+  <!-- ============ ACCUEIL ============ -->
+  <section id="accueil" class="accueil" aria-labelledby="titre-accueil">
+    <div class="conteneur">
+      <div class="accueil__grille">
+        <div class="accueil__texte">
+          <p class="accueil__pastille">Restaurant libanais</p>
+          <h1 id="titre-accueil" class="accueil__titre">Grain <span>de Cèdre</span></h1>
+          <p class="accueil__lieu"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span>75 Grande Rue, au cœur de Sens, dans une cour arborée</span></p>
+          <p class="accueil__note"><span class="etoiles" aria-hidden="true">★★★★½</span><span>4,5/5 sur Google · 144 avis</span></p>
+          <p class="accueil__intro">Mezzes, assiettes du chef, menu découverte et vins libanais, préparés avec des produits frais et servis en terrasse, à l'abri de la cour, ou en salle.</p>
+          <div class="accueil__actions">
+            <a class="bouton bouton--plein" href="tel:+33986225666"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span>Réserver au <span class="nowrap">09 86 22 56 66</span></span></a>
+            <a class="bouton bouton--contour" href="#cuisine">Découvrir la cuisine</a>
+          </div>
+          <div class="accueil__fiche">
+            <p>
+              <span><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg> 75 Grande Rue, 89100 Sens</span>
+              <a class="accueil__itineraire" href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire</a>
+            </p>
+            <p><span><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-horloge"/></svg> Midi et soir du mardi au samedi, dimanche midi · fermé le lundi <span class="a-confirmer">(horaires à confirmer)</span></span></p>
+          </div>
+        </div>
+
+        <div class="accueil__visuel">
+          <figure class="photo photo--arche">
+            <div class="photo__art" aria-hidden="true"><svg class="ic" focusable="false"><use href="#i-arbre"/></svg></div>
+            <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · La terrasse dans la cour</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LA CUISINE ============ -->
+  <section id="cuisine" class="section cuisine" aria-labelledby="titre-cuisine">
+    <div class="conteneur">
+      <div class="tete">
+        <p class="surtitre">La cuisine</p>
+        <h2 id="titre-cuisine">Les saveurs du Liban, faites maison</h2>
+        <p class="chapo">Une cuisine libanaise préparée à partir de produits frais : à partager en mezzes, à savourer en assiette, ou à découvrir au fil du menu du chef.</p>
+      </div>
+
+      <div class="plats">
+        <article class="plat plat--vedette">
+          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-etoile"/></svg></span>
+          <h3>Le menu découverte</h3>
+          <p>Laissez-vous guider : le chef compose pour vous une suite de plats, sans carte à choisir.</p>
+          <p class="plat__prix"><span class="a-confirmer">(prix à confirmer)</span></p>
+        </article>
+        <article class="plat">
+          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mezze"/></svg></span>
+          <h3>Les mezzes du chef</h3>
+          <p>Une assiette de petites spécialités à partager.</p>
+          <p class="plat__prix"><span class="a-confirmer">(composition et prix à confirmer)</span></p>
+        </article>
+        <article class="plat">
+          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-assiette"/></svg></span>
+          <h3>L'assiette du chef</h3>
+          <p>Une assiette composée, pour un repas complet.</p>
+          <p class="plat__prix"><span class="a-confirmer">(composition et prix à confirmer)</span></p>
+        </article>
+        <article class="plat">
+          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-feuille"/></svg></span>
+          <h3>L'assiette végétarienne</h3>
+          <p>Une formule sans viande.</p>
+          <p class="plat__prix"><span class="a-confirmer">(composition et prix à confirmer)</span></p>
+        </article>
+        <article class="plat">
+          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-dessert"/></svg></span>
+          <h3>Les desserts</h3>
+          <p>Un choix de desserts, et un café gourmand.</p>
+          <p class="plat__prix"><span class="a-confirmer">(carte et prix à confirmer)</span></p>
+        </article>
+        <article class="plat">
+          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-verre"/></svg></span>
+          <h3>Les vins libanais</h3>
+          <p>Une sélection de vins du Liban pour accompagner le repas.</p>
+          <p class="plat__prix"><span class="a-confirmer">(sélection à confirmer)</span></p>
+        </article>
+      </div>
+
+      <div class="carte-a-venir">
+        <p><strong>La carte complète arrive ici.</strong> Plats, menus et prix seront ajoutés à partir de la carte du restaurant : rien n'est affiché tant qu'il n'est pas validé.</p>
+        <a class="bouton bouton--contour" href="tel:+33986225666"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg>Demander la carte</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LA COUR ============ -->
+  <section id="cour" class="section cour" aria-labelledby="titre-cour">
+    <div class="conteneur cour__grille">
+      <div>
+        <div class="tete">
+          <p class="surtitre">La terrasse</p>
+          <h2 id="titre-cour">Une cour cachée en plein centre-ville</h2>
+          <p class="chapo">À deux pas de la Grande Rue, le restaurant s'ouvre sur une cour arborée et intimiste, où l'on déjeune et dîne au calme dès les beaux jours.</p>
+        </div>
+        <ul class="atouts" role="list">
+          <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-arbre"/></svg><span>Une terrasse sous les arbres, entourée de bambous</span></li>
+          <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-vent"/></svg><span>Une cour intimiste, à l'abri du vent</span></li>
+          <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-soleil"/></svg><span>Ombragée l'été</span></li>
+          <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-couverts"/></svg><span>Une salle intérieure pour les jours plus frais</span></li>
+        </ul>
+        <div class="acces">
+          <h3>Comment nous trouver</h3>
+          <p>Au 75 Grande Rue, le restaurant se trouve au fond de la cour. <span class="a-confirmer">(indications d'accès à confirmer)</span></p>
+        </div>
+        <div class="groupes">
+          <h3>Groupes et événements</h3>
+          <p>Repas de groupe, anniversaire, privatisation&nbsp;: appelez-nous pour en parler. <span class="a-confirmer">(offre à confirmer)</span></p>
+        </div>
+      </div>
+      <div class="cour__photos">
+        <figure class="photo">
+          <div class="photo__art" aria-hidden="true"><svg class="ic" focusable="false"><use href="#i-arbre"/></svg></div>
+          <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · La cour et ses bambous</span></figcaption>
+        </figure>
+        <figure class="photo">
+          <div class="photo__art" aria-hidden="true"><svg class="ic" focusable="false"><use href="#i-mezze"/></svg></div>
+          <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · Une assiette de mezzes</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INFOS PRATIQUES ============ -->
+  <section id="infos" class="section infos" aria-labelledby="titre-infos">
+    <div class="conteneur">
+      <div class="tete">
+        <p class="surtitre">Infos pratiques</p>
+        <h2 id="titre-infos">Venir à Grain de Cèdre</h2>
+        <p class="chapo">La réservation est conseillée, surtout pour la terrasse.</p>
+      </div>
+      <div class="infos__grille">
+        <div class="carte-info carte-info--horaires">
+          <div class="carte-info__tete"><span class="rond"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-horloge"/></svg></span><h3>Horaires</h3></div>
+          <p class="carte-info__note a-confirmer">(horaires à confirmer)</p>
+          <table class="horaires">
+            <caption class="sr-only">Horaires d'ouverture (horaires à confirmer)</caption>
+            <tbody>
+              <tr data-jour="1" class="ferme"><th scope="row">Lundi</th><td>Fermé</td></tr>
+              <tr data-jour="2"><th scope="row">Mardi</th><td>12h – 14h · 19h – 22h</td></tr>
+              <tr data-jour="3"><th scope="row">Mercredi</th><td>12h – 14h · 19h – 22h</td></tr>
+              <tr data-jour="4"><th scope="row">Jeudi</th><td>12h – 14h · 19h – 22h</td></tr>
+              <tr data-jour="5"><th scope="row">Vendredi</th><td>12h – 14h · 19h – 22h</td></tr>
+              <tr data-jour="6"><th scope="row">Samedi</th><td>12h – 14h · 19h – 22h</td></tr>
+              <tr data-jour="0"><th scope="row">Dimanche</th><td>12h – 14h</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="carte-info">
+          <div class="carte-info__tete"><span class="rond"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span><h3>Adresse</h3></div>
+          <address>Grain de Cèdre<br>75 Grande Rue<br>89100 Sens</address>
+          <p class="carte-info__note">En plein centre-ville, au fond de la cour.</p>
+          <iframe class="carte-info__plan" src="https://www.openstreetmap.org/export/embed.html?bbox=3.2757%2C48.1960%2C3.2857%2C48.1985&amp;layer=mapnik&amp;marker=48.1972608%2C3.2807131" title="Plan : Grain de Cèdre, 75 Grande Rue à Sens" loading="lazy"></iframe>
+          <a class="bouton bouton--plein" href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire</a>
+        </div>
+        <div class="carte-info">
+          <div class="carte-info__tete"><span class="rond"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-carte"/></svg></span><h3>Bon à savoir</h3></div>
+          <ul class="puces" role="list">
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-couverts"/></svg>Déjeuner et dîner</li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-carte"/></svg>Cartes bancaires</li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-calendrier"/></svg>Réservation conseillée</li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-arbre"/></svg>Terrasse</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact" aria-labelledby="titre-contact">
+    <div class="conteneur">
+      <div class="tete">
+        <p class="surtitre">Réservation</p>
+        <h2 id="titre-contact">Réservez votre table</h2>
+        <p class="chapo">Un coup de fil suffit pour réserver en salle ou en terrasse.</p>
+      </div>
+      <div class="contact__cartes">
+        <a class="contact-carte" href="tel:+33986225666">
+          <span class="contact-carte__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg></span>
+          <span class="contact-carte__type">Téléphone</span>
+          <span class="contact-carte__valeur nowrap">09 86 22 56 66</span>
+          <span class="contact-carte__action">Appeler<svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg></span>
+        </a>
+        <div class="contact-carte">
+          <span class="contact-carte__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span>
+          <span class="contact-carte__type">E-mail</span>
+          <span class="contact-carte__valeur contact-carte__valeur--petit">Adresse e-mail à fournir</span>
+        </div>
+        <a class="contact-carte" href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener">
+          <span class="contact-carte__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>
+          <span class="contact-carte__type">Adresse</span>
+          <span class="contact-carte__valeur contact-carte__valeur--petit">75 Grande Rue, 89100 Sens</span>
+          <span class="contact-carte__action">Itinéraire<svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pied">
+  <div class="conteneur">
+    <a class="logo" href="#haut">
+      <span class="logo__pastille" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><use href="#cedre"/></svg></span>
+      <span class="logo__texte"><span class="logo__nom">Grain de Cèdre</span><span class="logo__sous">Restaurant libanais · 75 Grande Rue, Sens</span></span>
+    </a>
+    <div class="pied__bas">
+      <p>Maquette de démonstration réalisée par Nathan&nbsp;: ce n'est pas le site officiel de Grain de Cèdre. Photos à fournir&nbsp;; informations reprises des fiches Google et Tripadvisor de l'établissement, à valider avec lui.</p>
+      <a class="pied__haut" href="#haut"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-haut"/></svg>Haut de page</a>
+    </div>
+  </div>
+</footer>
+
+<nav class="barre-actions" aria-label="Actions rapides">
+  <a class="barre-actions__appel" href="tel:+33986225666"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg>Réserver</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire</a>
+  <a href="#infos"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-horloge"/></svg>Horaires</a>
+</nav>
+</body>
+</html>
