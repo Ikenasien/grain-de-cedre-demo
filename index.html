@@ -10,88 +10,88 @@
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Grain de Cèdre (maquette) · Restaurant libanais à Sens">
 <meta property="og:description" content="Maquette non officielle. Cuisine libanaise et terrasse dans une cour arborée, 75 Grande Rue à Sens.">
-<meta name="theme-color" content="#f8dfb6">
+<meta name="theme-color" content="#0b2a22">
 <meta name="color-scheme" content="light">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M6 64V30a26 26 0 0 1 52 0v34z' fill='%23123f33'/%3E%3Cg fill='%23f2b544'%3E%3Cpath d='M30 18h4l2 40h-8z'/%3E%3Cpath d='M22 26q10-11 20 0q-10 4-20 0z'/%3E%3Cpath d='M16 37q16-11 32 0q-16 4-32 0z'/%3E%3Cpath d='M11 48q21-12 42 0q-21 4-42 0z'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230f6e73'/%3E%3Cg fill='%23f2b544'%3E%3Cpath d='M30 12h4l2 44h-8z'/%3E%3Cpath d='M21 22q11-12 22 0q-11 4-22 0z'/%3E%3Cpath d='M15 33q17-12 34 0q-17 4-34 0z'/%3E%3Cpath d='M9 45q23-13 46 0q-23 4-46 0z'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;700&family=Mulish:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Alegreya+Sans:wght@400;500;700;800&display=swap">
 <style>
 /* ==========================================================
-   Grain de Cèdre — identité « Arcade et carreaux de ciment »
-   Tout en courbes : arcs, assiettes, frises, lumière de cour.
-   Mobile d'abord (~360 px), enrichi pour tablette et bureau.
+   Grain de Cèdre — identité « Affiche du Liban »
+   Affiche de voyage, lettres coufiques, mosaïque de carreaux,
+   cour de bambous. Mobile d'abord, enrichi pour le bureau.
    ========================================================== */
 :root{
   --cedre:#123f33;
-  --cedre-nuit:#0b2a22;
-  --cedre-clair:#2c6b57;
-  --abricot:#f8dfb6;
-  --abricot-clair:#fdf1dc;
-  --creme:#fff9ee;
+  --nuit:#0b2a22;
+  --ciel:#0f6e73;
+  --ciel-clair:#3f98a0;
+  --papier:#fbf3e2;
+  --papier-200:#f2e5cb;
   --safran:#f2b544;
   --sumac:#a4332a;
-  --sumac-fonce:#7f241d;
-  --faience:#14767a;
-  --peche:#ffd0ad;
+  --sumac-fonce:#7a211b;
+  --peche:#ffd9ba;
   --encre:#1d2a25;
-  --encre-douce:#4a5650;
+  --encre-douce:#46524c;
 
-  --police-titre:"El Messiri", Georgia, serif;
-  --police-texte:"Mulish", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --police-titre:"Reem Kufi", Georgia, serif;
+  --police-texte:"Alegreya Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
   --entete-h:4rem;
-  --barre-h:4.75rem;
+  --barre-h:4rem;
   --arc:999px 999px 0 0;
+  --bouton-arc:1.6rem 1.6rem .3rem .3rem;
   /* Carreau de ciment : étoile à huit branches */
-  --carreau:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Crect width='56' height='56' fill='%23123f33'/%3E%3Cg transform='translate(28 28)'%3E%3Crect x='-15' y='-15' width='30' height='30' fill='%2314767a'/%3E%3Crect x='-15' y='-15' width='30' height='30' fill='%2314767a' transform='rotate(45)'/%3E%3Crect x='-8' y='-8' width='16' height='16' fill='%23f2b544'/%3E%3Crect x='-8' y='-8' width='16' height='16' fill='%23f2b544' transform='rotate(45)'/%3E%3Ccircle r='3.5' fill='%23a4332a'/%3E%3C/g%3E%3Cg fill='%23f8dfb6'%3E%3Ccircle cx='0' cy='0' r='6'/%3E%3Ccircle cx='56' cy='0' r='6'/%3E%3Ccircle cx='0' cy='56' r='6'/%3E%3Ccircle cx='56' cy='56' r='6'/%3E%3C/g%3E%3C/svg%3E");
-  /* Ombre de feuillage sur le fond de la cour */
-  --feuillage:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='%23fff9ee' fill-opacity='.05'%3E%3Cpath d='M20 60C24 30 44 16 70 12c-2 28-20 46-50 48zM110 40c20-14 42-14 62-4-14 20-36 26-62 4zM60 130c6-26 26-40 52-40-2 26-22 44-52 40zM130 150c12-20 30-28 50-26-8 22-26 34-50 26zM0 150c10-14 24-20 40-18-6 16-20 24-40 18z'/%3E%3C/g%3E%3C/svg%3E");
+  --carreau:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Crect width='56' height='56' fill='%23123f33'/%3E%3Cg transform='translate(28 28)'%3E%3Crect x='-15' y='-15' width='30' height='30' fill='%230f6e73'/%3E%3Crect x='-15' y='-15' width='30' height='30' fill='%230f6e73' transform='rotate(45)'/%3E%3Crect x='-8' y='-8' width='16' height='16' fill='%23f2b544'/%3E%3Crect x='-8' y='-8' width='16' height='16' fill='%23f2b544' transform='rotate(45)'/%3E%3Ccircle r='3.5' fill='%23a4332a'/%3E%3C/g%3E%3Cg fill='%23fbf3e2'%3E%3Ccircle cx='0' cy='0' r='6'/%3E%3Ccircle cx='56' cy='0' r='6'/%3E%3Ccircle cx='0' cy='56' r='6'/%3E%3Ccircle cx='56' cy='56' r='6'/%3E%3C/g%3E%3C/svg%3E");
+  /* Tiges de bambou de la cour */
+  --tiges:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='240' viewBox='0 0 150 240'%3E%3Cg fill='none' stroke='%231c5543' stroke-linecap='round'%3E%3Cg stroke-width='9'%3E%3Cpath d='M26 0v56M26 62v58M26 126v56M26 188v52M88 0v30M88 36v66M88 108v62M88 176v64'/%3E%3C/g%3E%3Cg stroke-width='6'%3E%3Cpath d='M132 0v80M132 86v74M132 166v74'/%3E%3C/g%3E%3C/g%3E%3Cg fill='%231c5543'%3E%3Cpath d='M30 60c14-10 28-10 38-4-12 8-26 10-38 4zM92 105c12-10 24-11 34-6-11 8-23 10-34 6zM84 172c-14-9-28-9-38-3 12 7 26 9 38 3zM128 164c-10-8-22-9-30-4 9 7 21 8 30 4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* ---------- Base ---------- */
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:calc(var(--entete-h) + .5rem);scroll-padding-bottom:calc(var(--barre-h) + 1rem)}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{margin:0;font-family:var(--police-texte);font-size:1rem;line-height:1.7;color:var(--encre);background:var(--creme);-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:var(--police-titre);font-weight:700;line-height:1.15;margin:0;color:var(--cedre);text-wrap:balance}
+body{margin:0;font-family:var(--police-texte);font-size:1.125rem;line-height:1.5;color:var(--encre);background:var(--papier);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--police-titre);font-weight:700;line-height:1.08;margin:0;text-wrap:balance}
 p,figure,dl,dd,address{margin:0}
 address{font-style:normal}
 ul{margin:0;padding:0;list-style:none}
-a{color:var(--faience);text-decoration-thickness:.08em;text-underline-offset:.2em}
+a{color:var(--ciel);text-decoration-thickness:.08em;text-underline-offset:.2em}
 a:hover{color:var(--cedre)}
-:focus-visible{outline:3px solid var(--sumac);outline-offset:3px;border-radius:.5rem}
+:focus-visible{outline:3px solid var(--sumac);outline-offset:3px;border-radius:.3rem}
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
 main:focus{outline:none}
 .sprite{position:absolute;width:0;height:0;overflow:hidden}
 .ic{display:inline-block;width:1.25rem;height:1.25rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
-.conteneur{width:min(100% - 2rem, 68rem);margin-inline:auto}
+.conteneur{width:min(100% - 2rem, 76rem);margin-inline:auto}
 .a-confirmer{font-weight:800;color:var(--sumac-fonce)}
 
-/* Frise de carreaux de ciment, signature de la maquette */
+/* Frise de carreaux de ciment */
 .frise{height:56px;background:var(--carreau) center/56px 56px repeat-x}
 
 /* ---------- Bandeau maquette ---------- */
-.bandeau{background:var(--cedre);color:var(--creme)}
-.bandeau p{display:flex;justify-content:center;align-items:center;gap:.5rem;padding:.4rem 1rem;font-size:.875rem;line-height:1.35;text-align:center}
-.bandeau .ic{width:1rem;height:1rem;color:var(--safran)}
+.bandeau{background:var(--safran);color:var(--nuit)}
+.bandeau p{display:flex;justify-content:center;align-items:center;gap:.5rem;padding:.35rem 1rem;font-size:.9375rem;font-weight:700;line-height:1.3;text-align:center}
+.bandeau .ic{width:1rem;height:1rem}
 
 /* ---------- Lien d'évitement ---------- */
-.evitement{position:absolute;left:1rem;top:-6rem;z-index:100;padding:.75rem 1.25rem;border-radius:999px;background:var(--cedre);color:var(--creme);font-weight:800;text-decoration:none}
-.evitement:focus{top:.75rem;color:var(--creme)}
+.evitement{position:absolute;left:1rem;top:-6rem;z-index:100;padding:.75rem 1.25rem;background:var(--nuit);color:var(--papier);font-weight:800;text-decoration:none}
+.evitement:focus{top:.75rem;color:var(--papier)}
 
 /* ---------- En-tête ---------- */
-.entete{position:sticky;top:0;z-index:40;background:var(--creme);box-shadow:0 8px 20px -16px rgb(18 63 51 / .6)}
+.entete{position:sticky;top:0;z-index:40;background:var(--nuit);color:var(--papier)}
+.entete :focus-visible,.pied :focus-visible,.contact :focus-visible,.cour :focus-visible,.accueil :focus-visible{outline-color:var(--safran)}
 .entete__barre{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:var(--entete-h)}
-.logo{display:inline-flex;align-items:center;gap:.55rem;min-height:2.75rem;color:var(--cedre);text-decoration:none}
-.logo:hover{color:var(--cedre)}
-.logo__arc{display:grid;place-items:end center;width:2.1rem;height:2.7rem;padding-bottom:.2rem;border-radius:var(--arc);background:var(--cedre);color:var(--safran)}
-.logo__arc svg{width:1.4rem;height:1.6rem;fill:currentColor}
+.logo{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;color:var(--papier);text-decoration:none}
+.logo:hover{color:var(--papier)}
+.logo svg{width:1.9rem;height:2.2rem;fill:var(--safran)}
 .logo__texte{display:flex;flex-direction:column;line-height:1.05}
 .logo__nom{font-family:var(--police-titre);font-size:1.375rem;font-weight:700}
-.logo__sous{display:none;font-size:.75rem;font-weight:600;color:var(--encre-douce)}
+.logo__sous{display:none;font-size:.875rem;color:var(--peche)}
 
-.nav-bouton{display:none;align-items:center;justify-content:center;gap:.5rem;min-width:2.75rem;min-height:2.75rem;padding:.5rem .7rem;border:0;border-radius:999px;background:var(--abricot);color:var(--cedre);font:800 .9375rem var(--police-texte);cursor:pointer}
+.nav-bouton{display:none;align-items:center;justify-content:center;gap:.5rem;min-width:2.75rem;min-height:2.75rem;padding:.5rem .7rem;border:0;border-radius:var(--bouton-arc);background:var(--safran);color:var(--nuit);font:800 1rem var(--police-texte);cursor:pointer}
 .js .nav-bouton{display:inline-flex}
 .nav-bouton__libelle{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 .nav-bouton .ic-croix{display:none}
@@ -99,170 +99,155 @@ main:focus{outline:none}
 .nav-bouton[aria-expanded="true"] .ic-croix{display:inline-block}
 
 .nav__liste{display:flex;flex-wrap:wrap;gap:.25rem}
-.nav__lien{display:flex;align-items:center;min-height:2.75rem;padding:.5rem .85rem;border-radius:999px;color:var(--cedre);font-weight:800;text-decoration:none}
-.nav__lien:hover{background:var(--abricot);color:var(--cedre)}
-.nav__tel{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:.5rem 1.1rem;border-radius:999px;background:var(--sumac);color:var(--creme);font-weight:800;text-decoration:none}
-.nav__tel:hover{background:var(--sumac-fonce);color:var(--creme)}
+.nav__lien{display:flex;align-items:center;min-height:2.75rem;padding:.5rem .8rem;color:var(--papier);font-weight:700;text-decoration:none}
+.nav__lien:hover{color:var(--safran)}
+.nav__tel{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:.5rem 1.1rem;border-radius:var(--bouton-arc);background:var(--safran);color:var(--nuit);font-weight:800;text-decoration:none}
+.nav__tel:hover{background:var(--papier);color:var(--nuit)}
 /* Sans JS : la navigation passe sous le logo */
 .entete__barre{flex-wrap:wrap;padding-block:.5rem}
 .nav{flex-basis:100%}
 .js .entete__barre{flex-wrap:nowrap;padding-block:0}
-.js .nav{position:absolute;top:calc(100% + .5rem);left:.75rem;right:.75rem;max-height:calc(100dvh - 6rem);overflow-y:auto;padding:1rem 1.25rem 1.25rem;border-radius:1.5rem;background:var(--creme);box-shadow:0 24px 40px -18px rgb(18 63 51 / .55);visibility:hidden;opacity:0;transform:translateY(-.5rem);transition:opacity .2s ease,transform .2s ease,visibility 0s .2s}
-.js .nav.est-ouvert{visibility:visible;opacity:1;transform:none;transition:opacity .2s ease,transform .2s ease}
-.js .nav__liste{flex-direction:column;flex-wrap:nowrap;align-items:center;gap:0}
-.js .nav__liste li{width:100%}
-.js .nav__lien{justify-content:center;min-height:3.25rem;font-family:var(--police-titre);font-weight:700;font-size:1.5rem}
-.js .nav__tel{justify-content:center;width:100%;min-height:3rem;margin-top:.75rem}
+.js .nav{position:absolute;top:100%;left:0;right:0;max-height:calc(100dvh - 5rem);overflow-y:auto;padding:.75rem 1.25rem 1.25rem;background:var(--nuit);visibility:hidden;opacity:0;transition:opacity .15s linear,visibility 0s .15s}
+.js .nav.est-ouvert{visibility:visible;opacity:1;transition:opacity .15s linear}
+.js .nav__liste{flex-direction:column;flex-wrap:nowrap;gap:0}
+.js .nav__lien{min-height:3.25rem;padding-inline:.25rem;border-bottom:1px solid rgb(251 243 226 / .18);font-family:var(--police-titre);font-weight:500;font-size:1.5rem}
+.js .nav__tel{justify-content:center;width:100%;min-height:3rem;margin-top:.9rem}
 
-/* ---------- Boutons ---------- */
-.bouton{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.125rem;padding:.75rem 1.6rem;border-radius:999px;font-weight:800;font-size:1rem;line-height:1.2;text-align:center;text-decoration:none;transition:background-color .2s ease,transform .2s ease}
+/* ---------- Boutons en forme d'arc ---------- */
+.bouton{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.25rem;padding:.8rem 1.6rem .7rem;border-radius:var(--bouton-arc);font-weight:800;font-size:1.0625rem;line-height:1.15;text-align:center;text-decoration:none;transition:background-color .2s ease,transform .2s ease}
 .bouton:hover{transform:translateY(-2px)}
-.bouton--sumac{background:var(--sumac);color:var(--creme)}
-.bouton--sumac:hover{background:var(--sumac-fonce);color:var(--creme)}
-.bouton--cedre{background:var(--cedre);color:var(--creme)}
-.bouton--cedre:hover{background:var(--cedre-nuit);color:var(--creme)}
-.bouton--lien{color:var(--cedre);box-shadow:inset 0 0 0 2px var(--cedre)}
-.bouton--lien:hover{background:var(--cedre);color:var(--creme)}
-.bouton--safran{background:var(--safran);color:var(--cedre-nuit)}
-.bouton--safran:hover{background:#f7c766;color:var(--cedre-nuit)}
+.bouton--safran{background:var(--safran);color:var(--nuit)}
+.bouton--safran:hover{background:var(--papier);color:var(--nuit)}
+.bouton--papier{background:var(--papier);color:var(--nuit)}
+.bouton--papier:hover{background:var(--safran);color:var(--nuit)}
+.bouton--cedre{background:var(--cedre);color:var(--papier)}
+.bouton--cedre:hover{background:var(--nuit);color:var(--papier)}
 
-/* ---------- Titres de section : centrés ---------- */
+/* ---------- Titres de section ---------- */
 .section{padding-block:clamp(3rem, 9vw, 6rem)}
-.tete{max-width:40rem;margin:0 auto clamp(1.75rem, 5vw, 3rem);text-align:center}
-.surtitre{margin-bottom:.35rem;font-family:var(--police-titre);font-size:1.25rem;font-weight:500;color:var(--sumac)}
-.tete h2{font-size:clamp(2.25rem, 5vw + 1rem, 3.5rem)}
-.chapo{margin-top:.9rem;font-size:1.125rem;color:var(--encre-douce)}
+.tete{max-width:48rem;margin-bottom:clamp(1.75rem, 5vw, 3rem)}
+.surtitre{margin-bottom:.25rem;font-family:var(--police-titre);font-size:1.25rem;font-weight:500;color:var(--sumac)}
+.tete h2{font-size:clamp(2.4rem, 5vw + 1.1rem, 4.25rem);color:var(--cedre)}
+.chapo{margin-top:.85rem;font-size:1.25rem;line-height:1.45;color:var(--encre-douce)}
 
-/* ---------- Emplacements photo : niches en arc ---------- */
-.photo{position:relative;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;border-radius:var(--arc);background:radial-gradient(70% 45% at 50% 30%, rgb(255 249 238 / .55), transparent),linear-gradient(180deg, var(--peche), var(--abricot-clair));box-shadow:inset 0 0 0 2px rgb(18 63 51 / .18)}
-.photo::before{content:"";position:absolute;inset:.45rem .45rem 0;border:1.5px dashed rgb(18 63 51 / .3);border-bottom:0;border-radius:var(--arc)}
-.photo figcaption{position:relative;margin:0 .5rem .6rem;padding:.2rem .6rem;border-radius:.8rem;background:rgb(255 249 238 / .94);font-size:.8125rem;line-height:1.3;text-align:center;color:var(--encre)}
-.photo__mention{display:block;font-weight:800;color:var(--sumac-fonce)}
-.photo__sujet{display:none}
-
-/* ---------- Accueil : soleil et triple arcade ---------- */
-.accueil{position:relative;overflow:clip;padding-top:clamp(2rem, 6vw, 4rem);background:radial-gradient(34rem 34rem at 50% -6rem, rgb(242 181 68 / .75), transparent 70%),var(--abricot);text-align:center}
-.accueil .a-confirmer{color:var(--sumac-fonce)}
-.accueil__pastille{font-family:var(--police-titre);font-size:1.3125rem;font-weight:500;color:var(--sumac-fonce)}
-.accueil__titre{margin-top:.1rem;font-size:clamp(3.6rem, 17vw, 8rem);line-height:.98}
-.accueil__titre span{color:var(--sumac)}
-.accueil__intro{max-width:38rem;margin:1rem auto 0;font-size:1.125rem;line-height:1.6}
-.accueil__actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:1.5rem}
+/* ---------- L'affiche ---------- */
+.accueil{position:relative;display:flex;flex-direction:column;overflow:hidden;background:var(--ciel);color:var(--papier)}
+.accueil .a-confirmer{color:var(--peche)}
+.accueil__texte{position:relative;z-index:1;padding-block:clamp(2rem, 6vw, 4rem) 0}
+.accueil__pastille{font-family:var(--police-titre);font-size:1.25rem;font-weight:500;color:var(--safran)}
+.accueil__titre{margin-top:.15rem;font-size:clamp(4rem, 20vw, 8.5rem);line-height:.98;color:var(--papier)}
+.accueil__titre span{display:block;color:var(--safran)}
+.accueil__intro{max-width:32rem;margin-top:1rem;font-size:1.25rem;line-height:1.4}
+.accueil__actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
 .accueil__actions .bouton{flex:1 1 100%}
-.accueil__fiche{display:grid;justify-items:center;gap:.35rem;max-width:40rem;margin:1.5rem auto 0;font-size:.9688rem}
-.accueil__fiche .etoiles{color:var(--sumac);letter-spacing:.06em}
-.accueil__fiche a{color:var(--cedre);font-weight:800}
+.affiche{order:1;display:block;width:100%;height:17rem;margin-top:1.25rem}
+.accueil__fiche{order:2;position:relative;z-index:1;background:var(--nuit)}
+.accueil__fiche .conteneur{display:grid;gap:.5rem;padding-block:0 1.25rem}
+.accueil__fiche a{color:var(--safran);font-weight:800}
+.accueil__fiche .etoiles{color:var(--safran);letter-spacing:.04em}
 
-.arcade{display:grid;grid-template-columns:1fr 1.3fr 1fr;align-items:end;gap:clamp(.4rem, 2vw, 1.25rem);max-width:54rem;margin:2rem auto 0;padding-inline:1rem}
-.arcade .photo{aspect-ratio:3/4.6}
-.arcade__centre{position:relative;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;aspect-ratio:3/4.4;border-radius:var(--arc);background:var(--cedre);color:var(--abricot)}
-.arcade__centre::before{content:"";position:absolute;top:14%;left:27%;width:46%;aspect-ratio:1;border-radius:50%;background:var(--safran)}
-.arcade__centre svg{position:relative;width:82%;height:auto;margin-bottom:0;fill:currentColor}
+/* ---------- La cuisine : la mosaïque ---------- */
+.cuisine{padding-bottom:0}
+.cuisine .tete{margin-bottom:clamp(1.5rem, 4vw, 2.5rem)}
+.mosaique{display:grid;grid-template-columns:minmax(0,1fr)}
+.tuile{--fond:var(--ciel);--trait:var(--safran);--texte:var(--papier);--note:var(--peche);position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:15rem;padding:2rem 1.75rem 1.75rem;background:radial-gradient(circle 4.5rem at 0 0, var(--trait) 0 98%, transparent) no-repeat,radial-gradient(circle 4.5rem at 100% 100%, rgb(255 255 255 / .1) 0 98%, transparent) no-repeat,var(--fond);color:var(--texte)}
+.tuile::after{content:"";position:absolute;top:0;left:0;width:3.1rem;height:3.1rem;border-radius:0 0 100% 0;background:var(--fond)}
+.tuile svg:not(.ic){position:absolute;z-index:1;top:.45rem;left:.45rem;width:1.65rem;height:1.65rem;fill:var(--trait)}
+.tuile h3{font-size:clamp(1.75rem, 2vw + 1.1rem, 2.25rem);color:var(--texte)}
+.tuile p{margin-top:.4rem}
+.tuile .a-confirmer{color:var(--note);font-size:1rem}
+.tuile--sumac{--fond:var(--sumac);--trait:var(--safran);--note:var(--peche)}
+.tuile--safran{--fond:var(--safran);--trait:var(--sumac);--texte:var(--nuit);--note:var(--sumac-fonce)}
+.tuile--cedre{--fond:var(--cedre);--trait:var(--ciel-clair);--note:var(--peche)}
+.tuile--terre{--fond:#8f3f29;--trait:var(--papier);--note:var(--peche)}
+.tuile--papier{--fond:var(--papier-200);--trait:var(--ciel);--texte:var(--nuit);--note:var(--sumac-fonce)}
+.tuile--vedette{min-height:19rem;justify-content:center}
+.tuile--vedette h3{font-size:clamp(2.5rem, 4vw + 1.2rem, 4rem)}
+.tuile--carte .bouton{align-self:flex-start;margin-top:1rem}
 
-/* ---------- La cuisine : la table de mezzes ---------- */
-.cuisine{background:var(--creme)}
-.vedette{position:relative;max-width:40rem;margin:0 auto 2.5rem;padding:clamp(4rem, 14vw, 6.5rem) clamp(1.5rem, 6vw, 4rem) 2.25rem;border-radius:20rem 20rem 1.5rem 1.5rem;background:var(--cedre);text-align:center;color:var(--creme)}
-.vedette svg{display:block;width:3rem;height:3.5rem;margin:0 auto .5rem;fill:var(--safran)}
-.vedette h3{font-size:clamp(1.875rem, 3vw + 1rem, 2.625rem);color:var(--creme)}
-.vedette p{margin-top:.5rem}
-.vedette .a-confirmer{color:var(--peche)}
-.plats{display:grid;grid-template-columns:minmax(0,1fr);gap:1.5rem}
-.plat{display:grid;grid-template-columns:auto 1fr;align-items:center;column-gap:1rem}
-.plat__assiette{grid-row:1 / span 3;display:grid;place-items:center;width:5.5rem;height:5.5rem;border-radius:50%;background:radial-gradient(circle, var(--creme) 54%, transparent 55%),conic-gradient(from 0deg, var(--faience) 0 8%, var(--safran) 0 16.66%, var(--faience) 0 25%, var(--sumac) 0 33.33%, var(--faience) 0 41.66%, var(--safran) 0 50%, var(--faience) 0 58.33%, var(--sumac) 0 66.66%, var(--faience) 0 75%, var(--safran) 0 83.33%, var(--faience) 0 91.66%, var(--sumac) 0);box-shadow:0 8px 16px -10px rgb(18 63 51 / .7);color:var(--cedre)}
-.plat__assiette .ic{width:1.75rem;height:1.75rem}
-.plat h3{font-size:1.5rem}
-.plat p{color:var(--encre-douce);line-height:1.5}
-.plat__prix{font-size:.9rem}
-.carte-a-venir{display:grid;justify-items:center;gap:.9rem;max-width:44rem;margin:2.5rem auto 0;text-align:center}
-
-/* ---------- La cour : à l'ombre des arbres ---------- */
-.cour{background:var(--feuillage) 0 0/180px 180px, var(--cedre);color:var(--creme)}
-.cour .tete h2,.cour h3{color:var(--creme)}
+/* ---------- La cour : bambous et arcade ---------- */
+.cour{background:var(--tiges) 0 0/150px 240px, var(--cedre);color:var(--papier)}
+.cour__bloc{padding-block:clamp(.5rem, 2vw, 1.5rem)}
+.cour .tete{margin-bottom:1.25rem}
+.cour .tete h2{color:var(--papier)}
 .cour .surtitre{color:var(--safran)}
 .cour .chapo{color:#dbe7df}
 .cour .a-confirmer{color:var(--peche)}
-.cour :focus-visible{outline-color:var(--safran)}
-.cour__niches{display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:1rem;max-width:40rem;margin:0 auto 2.25rem}
-.cour__niches .photo{aspect-ratio:3/4}
-.cour__niches .photo:first-child{aspect-ratio:3/4.6}
-.atouts{display:grid;gap:.85rem;max-width:34rem;margin-inline:auto}
-.atouts li{display:flex;align-items:flex-start;gap:.75rem;line-height:1.45}
-.atouts .ic{width:1.5rem;height:1.5rem;margin-top:.05rem;color:var(--safran)}
-.cour__encarts{display:grid;gap:1rem;max-width:56rem;margin:2.25rem auto 0}
-.encart{padding:1.25rem 1.4rem;border-radius:1.5rem;background:rgb(255 249 238 / .09)}
-.encart h3{font-size:1.5rem;margin-bottom:.25rem}
+.atouts{display:grid;gap:.7rem}
+.atouts li{display:flex;align-items:flex-start;gap:.7rem;line-height:1.35}
+.atouts .ic{width:1.45rem;height:1.45rem;margin-top:.05rem;color:var(--safran)}
+.arcade{display:grid;grid-template-columns:1fr 1.25fr 1fr;align-items:end;gap:clamp(.4rem, 1.5vw, 1rem);margin-top:1.5rem}
+.photo{position:relative;display:flex;align-items:flex-end;justify-content:center;aspect-ratio:3/4.4;overflow:hidden;border-radius:var(--arc);background:linear-gradient(180deg, var(--peche), var(--papier));box-shadow:inset 0 0 0 3px var(--safran)}
+.arcade .photo:nth-child(2){aspect-ratio:3/4.1}
+.photo figcaption{margin:0 .3rem .5rem;padding:.15rem .5rem;font-size:.9375rem;line-height:1.2;text-align:center;color:var(--nuit)}
+.photo__mention{display:block;font-weight:800;color:var(--sumac-fonce)}
+.photo__sujet{display:none}
+.cour__encarts{display:grid;gap:1rem;margin-top:1rem}
+.encart{padding:1.25rem 1.4rem;background:var(--nuit)}
+.encart h3{font-size:1.5rem;margin-bottom:.25rem;color:var(--safran)}
 
 /* ---------- Infos pratiques ---------- */
-.infos{background:var(--abricot-clair)}
+.infos{background:var(--papier)}
 .infos__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem}
-.carte-info{padding:1.4rem;border-radius:1.5rem;background:var(--creme);box-shadow:0 12px 26px -20px rgb(18 63 51 / .5)}
-.carte-info h3{margin-bottom:.5rem;font-size:1.625rem}
-.carte-info address{font-size:1.125rem;font-weight:800;line-height:1.45;color:var(--cedre)}
-.carte-info__note{margin-top:.35rem;color:var(--encre-douce)}
-.carte-info__plan{display:block;width:100%;aspect-ratio:4/3;max-height:18rem;margin-top:1rem;border:0;border-radius:1rem;background:var(--abricot)}
+.carte-info{padding:1.4rem;background:var(--papier-200)}
+.carte-info h3{margin-bottom:.5rem;font-size:1.75rem;color:var(--cedre)}
+.carte-info address{font-size:1.1875rem;font-weight:800;line-height:1.35;color:var(--cedre)}
+.carte-info__note{margin-top:.3rem;color:var(--encre-douce)}
+.carte-info__plan{display:block;width:100%;aspect-ratio:4/3;max-height:18rem;margin-top:1rem;border:0;background:var(--papier)}
 .carte-info .bouton{margin-top:1.1rem}
-.puces{display:flex;flex-wrap:wrap;gap:.5rem}
-.puces li{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .85rem;border-radius:999px;background:var(--abricot);color:var(--cedre);font-weight:800;font-size:.9375rem}
-.puces .ic{width:1.05rem;height:1.05rem}
+.puces{display:flex;flex-wrap:wrap;gap:.45rem}
+.puces li{padding:.15rem .75rem;background:var(--cedre);color:var(--papier);font-weight:700;font-size:1rem}
 
-/* Les horaires dans une niche en arc */
-.carte-info--horaires{padding-top:clamp(3.5rem, 12vw, 5rem);border-radius:16rem 16rem 1.5rem 1.5rem;background:var(--faience);color:var(--creme);text-align:center}
-.carte-info--horaires h3{color:var(--creme)}
-.carte-info--horaires .a-confirmer,.carte-info--horaires .carte-info__note{color:var(--creme);font-weight:800}
-.horaires{width:100%;margin-top:.75rem;border-collapse:collapse;text-align:left}
-.horaires th,.horaires td{padding:.55rem .5rem;border-bottom:1px solid rgb(255 249 238 / .28);font-weight:400;vertical-align:top}
+/* Les horaires dans un cadre de carreaux */
+.carte-info--horaires{padding:0;border:14px solid transparent;background:linear-gradient(var(--papier-200), var(--papier-200)) padding-box, var(--carreau) 0 0/28px 28px border-box}
+.carte-info--horaires > *{margin-inline:1.1rem}
+.carte-info--horaires h3{margin-top:1.1rem}
+.horaires{width:calc(100% - 2.2rem);margin-block:.75rem 1rem;border-collapse:collapse}
+.horaires th,.horaires td{padding:.55rem .45rem;border-bottom:1px solid rgb(18 63 51 / .2);text-align:left;font-weight:500;vertical-align:top}
 .horaires tr:last-child th,.horaires tr:last-child td{border-bottom:0}
-.horaires td{text-align:right;font-weight:800;font-variant-numeric:tabular-nums}
-.horaires .ferme td{color:var(--peche)}
-.horaires .aujourdhui{background:var(--cedre)}
+.horaires td{text-align:right;font-weight:800;color:var(--cedre);font-variant-numeric:tabular-nums}
+.horaires .ferme td{color:var(--sumac)}
+.horaires .aujourdhui{background:var(--cedre);color:var(--papier)}
 .horaires .aujourdhui th{font-weight:800}
-.horaires .aujourdhui th,.horaires .aujourdhui td{border-bottom-color:transparent}
-.aujourdhui__mot{display:inline-block;margin-left:.4rem;padding:0 .5rem;border-radius:999px;background:var(--safran);color:var(--cedre-nuit);font-size:.75rem;font-weight:800}
+.horaires .aujourdhui td{color:var(--papier)}
+.aujourdhui__mot{display:inline-block;margin-left:.4rem;padding:0 .45rem;background:var(--safran);color:var(--nuit);font-size:.8125rem;font-weight:800}
 
 /* ---------- Réservation ---------- */
-.contact{background:var(--sumac);color:var(--creme);text-align:center}
-.contact .tete{margin-bottom:1.25rem}
-.contact .tete h2{color:var(--creme)}
-.contact .surtitre{color:var(--peche)}
-.contact .chapo{color:var(--creme)}
-.contact :focus-visible{outline-color:var(--safran)}
-.contact__numero{display:block;font-family:var(--police-titre);font-weight:700;font-size:clamp(2.5rem, 11vw, 5.5rem);line-height:1.1;color:var(--creme);text-decoration:none}
-.contact__numero:hover{color:var(--safran)}
-.contact__autres{display:grid;gap:.25rem;margin-top:1.5rem}
-.contact__autres a{color:var(--creme);font-weight:800}
+.contact{position:relative;overflow:hidden;background:var(--sumac);color:var(--papier)}
+.contact__cedre{position:absolute;right:-4rem;bottom:-3rem;width:26rem;height:30rem;fill:#8f2a22}
+.contact .conteneur{position:relative}
+.contact .tete{margin-bottom:1rem}
+.contact .tete h2{color:var(--papier)}
+.contact .surtitre{color:var(--safran)}
+.contact .chapo{color:var(--papier)}
+.contact__numero{display:block;font-family:var(--police-titre);font-weight:700;font-size:clamp(2.5rem, 12vw, 6rem);line-height:1.1;color:var(--safran);text-decoration:none}
+.contact__numero:hover{color:var(--papier)}
+.contact__autres{display:grid;gap:.25rem;margin-top:1.25rem}
+.contact__autres a{color:var(--papier);font-weight:800}
 .contact__autres a:hover{color:var(--safran)}
 
 /* ---------- Pied de page ---------- */
-.pied{padding-block:2.5rem calc(1.5rem + var(--barre-h) + env(safe-area-inset-bottom, 0px));background:var(--cedre-nuit);color:#c9d6ce;text-align:center}
-.pied a{color:var(--creme)}
-.pied :focus-visible{outline-color:var(--safran)}
-.pied .logo{color:var(--creme)}
-.pied .logo__sous{display:block;color:#a9bcb1}
-.pied__bas{display:grid;justify-items:center;gap:.75rem;margin-top:1.25rem}
+.pied{padding-block:2.25rem calc(1.5rem + var(--barre-h) + env(safe-area-inset-bottom, 0px));background:var(--nuit);color:#c9d6ce}
+.pied a{color:var(--papier)}
+.pied .logo__sous{display:block}
+.pied__bas{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 1.5rem;margin-top:1.25rem}
 .pied__bas p{max-width:44rem}
 .pied__haut{display:inline-flex;align-items:center;gap:.4rem;min-height:2.75rem;font-weight:800;text-decoration:none}
 .pied__haut .ic{width:1rem;height:1rem}
 
-/* ---------- Barre d'actions : une pilule flottante ---------- */
-.barre-actions{position:fixed;left:.6rem;right:.6rem;bottom:calc(.6rem + env(safe-area-inset-bottom, 0px));z-index:30;display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:.25rem;padding:.3rem;border-radius:999px;background:var(--cedre);box-shadow:0 12px 24px -10px rgb(11 42 34 / .75)}
-.barre-actions a{display:flex;align-items:center;justify-content:center;gap:.35rem;min-height:3rem;padding:.25rem;border-radius:999px;color:var(--creme);font-size:.875rem;font-weight:800;line-height:1.1;text-align:center;text-decoration:none}
+/* ---------- Barre d'actions : trois petits arcs ---------- */
+.barre-actions{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:.25rem;padding:.35rem .4rem env(safe-area-inset-bottom, 0px);background:var(--nuit)}
+.barre-actions a{display:flex;align-items:center;justify-content:center;gap:.35rem;min-height:calc(var(--barre-h) - .35rem);padding:.3rem .2rem 0;border-radius:1.6rem 1.6rem 0 0;background:var(--cedre);color:var(--papier);font-size:1rem;font-weight:800;line-height:1.1;text-align:center;text-decoration:none}
 .barre-actions .ic{width:1.15rem;height:1.15rem}
-.barre-actions .barre-actions__appel{background:var(--safran);color:var(--cedre-nuit)}
+.barre-actions .barre-actions__appel{background:var(--safran);color:var(--nuit)}
 
-/* ---------- Apparition douce ---------- */
-@media (prefers-reduced-motion:no-preference){
-  .arcade > *{animation:monte .8s cubic-bezier(.2,.7,.2,1) both}
-  .arcade > :nth-child(2){animation-delay:.1s}
-  .arcade > :nth-child(3){animation-delay:.2s}
-}
-@keyframes monte{from{transform:translateY(24px)}to{transform:none}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
 
 /* ---------- Dès 18em : numéros et horaires insécables ---------- */
 @media (min-width:18em){
-  .nowrap,.nav__tel,.horaires td,.logo__nom{white-space:nowrap}
+  .nowrap,.nav__tel,.logo__nom{white-space:nowrap}
 }
 /* ---------- Sous 15em (texte très agrandi) : rien ne déborde ---------- */
 @media not all and (min-width:15em){
@@ -270,20 +255,18 @@ main:focus{outline:none}
   .barre-actions{display:none}
   .pied{padding-bottom:1.5rem}
   .entete .logo__texte{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
-  .accueil__titre{font-size:min(3.6rem, 22vw)}
-  .tete h2{font-size:min(2.25rem, 15vw)}
-  .plat{grid-template-columns:minmax(0,1fr)}
-  .plat__assiette{grid-row:auto}
+  .accueil__titre{font-size:min(4rem, 22vw)}
+  .tete h2{font-size:min(2.4rem, 15vw)}
   .arcade{grid-template-columns:minmax(0,1fr)}
-  .arcade .photo{aspect-ratio:auto;min-height:8rem}
+  .arcade .photo,.arcade .photo:nth-child(2){aspect-ratio:auto;min-height:9rem}
   .contact__numero{font-size:min(2.5rem, 13vw)}
 }
-
-/* ---------- Sous 22.5em : les horaires tiennent dans la niche ---------- */
-@media not all and (min-width:22.5em){
-  .carte-info--horaires{padding-inline:.65rem}
-  .horaires{font-size:.9375rem}
-  .horaires th,.horaires td{padding-inline:.35rem}
+/* ---------- Sous 24em : les horaires tiennent dans le cadre ---------- */
+@media not all and (min-width:24em){
+  .carte-info--horaires > *{margin-inline:.4rem}
+  .horaires{width:calc(100% - .8rem);font-size:1rem}
+  .horaires th,.horaires td{padding-inline:.25rem}
+  .horaires td{font-size:.9375rem}
 }
 
 /* ---------- Petits écrans confortables ---------- */
@@ -296,12 +279,15 @@ main:focus{outline:none}
 @media (min-width:30em){
   .logo__sous{display:block}
   .accueil__actions .bouton{flex:0 0 auto}
-  .photo figcaption{font-size:.875rem}
+  .horaires td{white-space:nowrap}
 }
 @media (min-width:40em){
   .photo__sujet{display:block}
-  .plats{grid-template-columns:1fr 1fr;column-gap:2.5rem}
+  .mosaique{grid-template-columns:1fr 1fr}
+  .tuile--vedette{grid-column:1 / -1}
+  .tuile--carte{grid-column:1 / -1}
   .cour__encarts{grid-template-columns:1fr 1fr}
+  .accueil__fiche .conteneur{grid-template-columns:auto 1fr auto;gap:1rem 2rem;align-items:center}
 }
 @media (min-width:48em){
   .infos__grille{grid-template-columns:1fr 1fr}
@@ -312,29 +298,31 @@ main:focus{outline:none}
 @media (min-width:60em){
   :root{--entete-h:4.5rem}
   html{scroll-padding-bottom:0}
-  body{font-size:1.0625rem}
+  body{font-size:1.1875rem}
   .barre-actions{display:none}
   .pied{padding-bottom:1.5rem}
   .js .nav-bouton{display:none}
-  .nav,.js .nav,.js .nav.est-ouvert{position:static;flex-basis:auto;max-height:none;overflow:visible;padding:0;border-radius:0;background:none;box-shadow:none;visibility:visible;opacity:1;transform:none;transition:none}
+  .nav,.js .nav,.js .nav.est-ouvert{position:static;flex-basis:auto;max-height:none;overflow:visible;padding:0;background:none;visibility:visible;opacity:1;transition:none}
   .entete__barre{flex-wrap:nowrap;padding-block:0}
-  .nav__liste,.js .nav__liste{flex-direction:row;flex-wrap:nowrap;align-items:center;gap:.15rem}
-  .js .nav__liste li{width:auto}
-  .nav__lien,.js .nav__lien{min-height:2.75rem;padding:.5rem .85rem;font-family:var(--police-texte);font-weight:800;font-size:.9688rem;white-space:nowrap}
-  .nav__lien[aria-current]{background:var(--abricot)}
+  .nav__liste,.js .nav__liste{flex-direction:row;flex-wrap:nowrap;align-items:center;gap:.1rem}
+  .nav__lien,.js .nav__lien{min-height:2.75rem;padding:.5rem .75rem;border:0;font-family:var(--police-texte);font-weight:700;font-size:1.0625rem;white-space:nowrap}
+  .nav__lien[aria-current]{color:var(--safran)}
   .nav__tel,.js .nav__tel{width:auto;margin:0 0 0 .6rem}
-  .plats{grid-template-columns:repeat(6, 1fr);column-gap:2rem;row-gap:2.5rem}
-  .plat{grid-column:span 2;grid-template-columns:minmax(0,1fr);align-content:start;justify-items:center;text-align:center}
-  .plat:nth-child(4){grid-column:2 / span 2}
-  .plat__assiette{grid-row:auto;width:9rem;height:9rem;margin-bottom:1rem}
-  .plat__assiette .ic{width:2.75rem;height:2.75rem}
-  .cour__grille{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3.5rem;align-items:center}
-  .cour__grille .cour__niches{margin:0}
-  .cour .tete{text-align:left;margin-inline:0}
-  .atouts{margin-inline:0}
+  .accueil{justify-content:space-between;min-height:41rem;min-height:max(41rem, calc(100svh - 7rem))}
+  .affiche{position:absolute;inset:0;height:100%;margin:0}
+  .accueil__texte{padding-block:3.5rem 2.5rem}
+  .accueil__titre{font-size:clamp(6rem, 10vw, 8.5rem)}
+  .accueil__intro,.accueil__titre{max-width:38rem}
+  .accueil__fiche{background:rgb(11 42 34 / .92)}
+  .accueil__fiche .conteneur{padding-block:1rem}
+  .mosaique{grid-template-columns:repeat(3, 1fr)}
+  .tuile--vedette{grid-column:span 2}
+  .tuile--carte{grid-column:span 2}
+  .cour__grille{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:stretch}
+  .arcade{margin:0;padding-left:3rem}
 }
 @media print{
-  .entete,.barre-actions,.nav-bouton,.carte-info__plan{display:none}
+  .entete,.barre-actions,.nav-bouton,.carte-info__plan,.affiche{display:none}
   .pied{padding-bottom:1.5rem}
 }
 </style>
@@ -391,21 +379,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
   <symbol id="cedre" viewBox="0 0 64 74"><path d="M30 8H34L36 73H28Z"/><path d="M21 14Q32 2 43 14Q32 18 21 14Z"/><path d="M13 27Q32 14 51 27Q32 31 13 27Z"/><path d="M6 41Q32 27 58 41Q32 45 6 41Z"/><path d="M1 55Q32 40 63 55Q32 59 1 55Z"/></symbol>
+  <symbol id="etoile" viewBox="0 0 24 24"><path d="M12 1l3 4.8 5.5-1.3-1.3 5.5L24 12l-4.8 3 1.3 5.5-5.5-1.3L12 24l-3-4.8-5.500 1.3 1.3-5.5L0 12l4.8-3-1.3-5.5 5.500 1.3z"/></symbol>
   <symbol id="i-tel" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
-  <symbol id="i-horloge" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
   <symbol id="i-fleche" viewBox="0 0 24 24"><path d="M3 11 21 3l-8 18-2-8z"/></symbol>
-  <symbol id="i-assiette" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.5"/></symbol>
-  <symbol id="i-mezze" viewBox="0 0 24 24"><circle cx="7" cy="8" r="3.5"/><circle cx="17" cy="8" r="3.5"/><circle cx="7" cy="17" r="3.5"/><circle cx="17" cy="17" r="3.5"/></symbol>
-  <symbol id="i-feuille" viewBox="0 0 24 24"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15z"/><path d="M5 19 13 11"/></symbol>
-  <symbol id="i-verre" viewBox="0 0 24 24"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0zM12 14v7M8 21h8"/></symbol>
-  <symbol id="i-dessert" viewBox="0 0 24 24"><path d="M4 13h16l-2 7H6zM12 13c0-4 2-6 5-7M8 13c0-3 1-5 3-6"/></symbol>
+  <symbol id="i-horloge" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
   <symbol id="i-arbre" viewBox="0 0 24 24"><path d="M12 21v-6M12 15c-4 0-7-2.5-7-6a7 7 0 0 1 14 0c0 3.5-3 6-7 6z"/></symbol>
   <symbol id="i-vent" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7"/></symbol>
   <symbol id="i-soleil" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></symbol>
-  <symbol id="i-carte" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
   <symbol id="i-couverts" viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 1-3 4-3 7h3v11"/></symbol>
-  <symbol id="i-calendrier" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
   <symbol id="i-traits" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
   <symbol id="i-croix" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
   <symbol id="i-haut" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
@@ -414,7 +395,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <header class="entete">
   <div class="conteneur entete__barre">
     <a class="logo" href="#haut">
-      <span class="logo__arc" aria-hidden="true"><svg viewBox="0 0 64 74" focusable="false"><use href="#cedre"/></svg></span>
+      <svg viewBox="0 0 64 74" aria-hidden="true" focusable="false"><use href="#cedre"/></svg>
       <span class="logo__texte"><span class="logo__nom">Grain de Cèdre</span><span class="logo__sous">Restaurant libanais · Sens</span></span>
     </a>
     <button class="nav-bouton" type="button" aria-expanded="false" aria-controls="navigation">
@@ -437,33 +418,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <main id="contenu" tabindex="-1">
 
-  <!-- ============ ACCUEIL ============ -->
+  <!-- ============ ACCUEIL : l'affiche ============ -->
   <section id="accueil" class="accueil" aria-labelledby="titre-accueil">
-    <div class="conteneur">
-      <p class="accueil__pastille">Restaurant libanais</p>
+    <!-- Illustration vectorielle : le mont Liban et son cèdre -->
+    <svg class="affiche" viewBox="0 0 1200 640" preserveAspectRatio="xMaxYMax slice" aria-hidden="true" focusable="false">
+      <circle cx="905" cy="215" r="150" fill="#f2b544"/>
+      <path d="M0 540 170 480 310 515 470 420 610 480 770 310 870 395 985 270 1100 370 1200 310V640H0Z" fill="#3f98a0"/>
+      <path d="M770 310 730 353 758 345 775 362 796 342 815 351ZM985 270 945 314 972 305 990 325 1008 304 1030 316ZM1200 310 1160 345 1180 342 1200 358Z" fill="#fbf3e2"/>
+      <path d="M0 590C200 550 360 600 560 530 720 480 860 510 1000 450 1100 410 1160 430 1200 410V640H0Z" fill="#b9563a"/>
+      <path d="M0 625C300 605 520 640 700 595 860 555 1040 525 1200 535V640H0Z" fill="#0b2a22"/>
+      <use href="#cedre" x="745" y="190" width="350" height="405" fill="#0b2a22"/>
+    </svg>
+    <div class="accueil__texte conteneur">
+      <p class="accueil__pastille">Restaurant libanais · Sens</p>
       <h1 id="titre-accueil" class="accueil__titre">Grain <span>de Cèdre</span></h1>
       <p class="accueil__intro">Mezzes, assiettes du chef, menu découverte et vins libanais, préparés avec des produits frais et servis en terrasse, à l'abri de la cour, ou en salle.</p>
       <div class="accueil__actions">
-        <a class="bouton bouton--sumac" href="tel:+33986225666"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span>Réserver au <span class="nowrap">09 86 22 56 66</span></span></a>
-        <a class="bouton bouton--lien" href="#cuisine">Découvrir la cuisine</a>
+        <a class="bouton bouton--safran" href="tel:+33986225666"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span>Réserver au <span class="nowrap">09 86 22 56 66</span></span></a>
+        <a class="bouton bouton--papier" href="#cuisine">Découvrir la cuisine</a>
       </div>
-      <div class="accueil__fiche">
+    </div>
+    <div class="accueil__fiche">
+      <div class="conteneur">
         <p><span class="etoiles" aria-hidden="true">★★★★½</span> 4,5/5 sur Google · 144 avis</p>
         <p>75 Grande Rue, au cœur de Sens, dans une cour arborée · <a href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener">Itinéraire</a></p>
-        <p>Midi et soir du mardi au samedi, dimanche midi · fermé le lundi <span class="a-confirmer">(horaires à confirmer)</span></p>
+        <p>Fermé le lundi <span class="a-confirmer">(horaires à confirmer)</span></p>
       </div>
     </div>
-    <div class="arcade">
-      <figure class="photo">
-        <figcaption><span class="photo__mention">Photo à fournir</span><span class="photo__sujet">La terrasse dans la cour</span></figcaption>
-      </figure>
-      <div class="arcade__centre" aria-hidden="true"><svg viewBox="0 0 64 74" focusable="false"><use href="#cedre"/></svg></div>
-      <figure class="photo">
-        <figcaption><span class="photo__mention">Photo à fournir</span><span class="photo__sujet">Une assiette de mezzes</span></figcaption>
-      </figure>
-    </div>
-    <div class="frise" aria-hidden="true"></div>
   </section>
+  <div class="frise" aria-hidden="true"></div>
 
   <!-- ============ LA CUISINE ============ -->
   <section id="cuisine" class="section cuisine" aria-labelledby="titre-cuisine">
@@ -473,48 +456,47 @@ document.addEventListener('DOMContentLoaded', function () {
         <h2 id="titre-cuisine">Les saveurs du Liban, faites maison</h2>
         <p class="chapo">Une cuisine libanaise préparée à partir de produits frais : à partager en mezzes, à savourer en assiette, ou à découvrir au fil du menu du chef.</p>
       </div>
+    </div>
 
-      <article class="vedette">
-        <svg viewBox="0 0 64 74" aria-hidden="true" focusable="false"><use href="#cedre"/></svg>
+    <div class="mosaique">
+      <article class="tuile tuile--cedre tuile--vedette">
+        <svg aria-hidden="true" focusable="false"><use href="#etoile"/></svg>
         <h3>Le menu découverte</h3>
         <p>Laissez-vous guider : le chef compose pour vous une suite de plats, sans carte à choisir.</p>
         <p><span class="a-confirmer">(prix à confirmer)</span></p>
       </article>
-
-      <div class="plats">
-        <article class="plat">
-          <span class="plat__assiette"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mezze"/></svg></span>
-          <h3>Les mezzes du chef</h3>
-          <p>Une assiette de petites spécialités à partager.</p>
-          <p class="plat__prix"><span class="a-confirmer">(composition et prix à confirmer)</span></p>
-        </article>
-        <article class="plat">
-          <span class="plat__assiette"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-assiette"/></svg></span>
-          <h3>L'assiette du chef</h3>
-          <p>Une assiette composée, pour un repas complet.</p>
-          <p class="plat__prix"><span class="a-confirmer">(composition et prix à confirmer)</span></p>
-        </article>
-        <article class="plat">
-          <span class="plat__assiette"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-feuille"/></svg></span>
-          <h3>L'assiette végétarienne</h3>
-          <p>Une formule sans viande.</p>
-          <p class="plat__prix"><span class="a-confirmer">(composition et prix à confirmer)</span></p>
-        </article>
-        <article class="plat">
-          <span class="plat__assiette"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-dessert"/></svg></span>
-          <h3>Les desserts</h3>
-          <p>Un choix de desserts, et un café gourmand.</p>
-          <p class="plat__prix"><span class="a-confirmer">(carte et prix à confirmer)</span></p>
-        </article>
-        <article class="plat">
-          <span class="plat__assiette"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-verre"/></svg></span>
-          <h3>Les vins libanais</h3>
-          <p>Une sélection de vins du Liban pour accompagner le repas.</p>
-          <p class="plat__prix"><span class="a-confirmer">(sélection à confirmer)</span></p>
-        </article>
-      </div>
-
-      <div class="carte-a-venir">
+      <article class="tuile tuile--sumac">
+        <svg aria-hidden="true" focusable="false"><use href="#etoile"/></svg>
+        <h3>Les mezzes du chef</h3>
+        <p>Une assiette de petites spécialités à partager.</p>
+        <p><span class="a-confirmer">(composition et prix à confirmer)</span></p>
+      </article>
+      <article class="tuile tuile--safran">
+        <svg aria-hidden="true" focusable="false"><use href="#etoile"/></svg>
+        <h3>L'assiette du chef</h3>
+        <p>Une assiette composée, pour un repas complet.</p>
+        <p><span class="a-confirmer">(composition et prix à confirmer)</span></p>
+      </article>
+      <article class="tuile">
+        <svg aria-hidden="true" focusable="false"><use href="#etoile"/></svg>
+        <h3>L'assiette végétarienne</h3>
+        <p>Une formule sans viande.</p>
+        <p><span class="a-confirmer">(composition et prix à confirmer)</span></p>
+      </article>
+      <article class="tuile tuile--terre">
+        <svg aria-hidden="true" focusable="false"><use href="#etoile"/></svg>
+        <h3>Les desserts</h3>
+        <p>Un choix de desserts, et un café gourmand.</p>
+        <p><span class="a-confirmer">(carte et prix à confirmer)</span></p>
+      </article>
+      <article class="tuile tuile--cedre">
+        <svg aria-hidden="true" focusable="false"><use href="#etoile"/></svg>
+        <h3>Les vins libanais</h3>
+        <p>Une sélection de vins du Liban pour accompagner le repas.</p>
+        <p><span class="a-confirmer">(sélection à confirmer)</span></p>
+      </article>
+      <div class="tuile tuile--papier tuile--carte">
+        <svg aria-hidden="true" focusable="false"><use href="#etoile"/></svg>
         <p><strong>La carte complète arrive ici.</strong> Plats, menus et prix seront ajoutés à partir de la carte du restaurant : rien n'est affiché tant qu'il n'est pas validé.</p>
         <a class="bouton bouton--cedre" href="tel:+33986225666"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg>Demander la carte</a>
       </div>
@@ -525,7 +507,7 @@ document.addEventListener('DOMContentLoaded', function () {
   <section id="cour" class="section cour" aria-labelledby="titre-cour">
     <div class="conteneur">
       <div class="cour__grille">
-        <div>
+        <div class="cour__bloc">
           <div class="tete">
             <p class="surtitre">La terrasse</p>
             <h2 id="titre-cour">Une cour cachée en plein centre-ville</h2>
@@ -538,12 +520,15 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-couverts"/></svg><span>Une salle intérieure pour les jours plus frais</span></li>
           </ul>
         </div>
-        <div class="cour__niches">
+        <div class="arcade">
+          <figure class="photo">
+            <figcaption><span class="photo__mention">Photo à fournir</span><span class="photo__sujet">La terrasse</span></figcaption>
+          </figure>
           <figure class="photo">
             <figcaption><span class="photo__mention">Photo à fournir</span><span class="photo__sujet">La cour et ses bambous</span></figcaption>
           </figure>
           <figure class="photo">
-            <figcaption><span class="photo__mention">Photo à fournir</span><span class="photo__sujet">La salle</span></figcaption>
+            <figcaption><span class="photo__mention">Photo à fournir</span><span class="photo__sujet">Les mezzes</span></figcaption>
           </figure>
         </div>
       </div>
@@ -576,12 +561,12 @@ document.addEventListener('DOMContentLoaded', function () {
             <caption class="sr-only">Horaires d'ouverture (horaires à confirmer)</caption>
             <tbody>
               <tr data-jour="1" class="ferme"><th scope="row">Lundi</th><td>Fermé</td></tr>
-              <tr data-jour="2"><th scope="row">Mardi</th><td>12h – 14h · 19h – 22h</td></tr>
-              <tr data-jour="3"><th scope="row">Mercredi</th><td>12h – 14h · 19h – 22h</td></tr>
-              <tr data-jour="4"><th scope="row">Jeudi</th><td>12h – 14h · 19h – 22h</td></tr>
-              <tr data-jour="5"><th scope="row">Vendredi</th><td>12h – 14h · 19h – 22h</td></tr>
-              <tr data-jour="6"><th scope="row">Samedi</th><td>12h – 14h · 19h – 22h</td></tr>
-              <tr data-jour="0"><th scope="row">Dimanche</th><td>12h – 14h</td></tr>
+              <tr data-jour="2"><th scope="row">Mardi</th><td><span class="nowrap">12h – 14h30</span> · <span class="nowrap">18h30 – 22h30</span></td></tr>
+              <tr data-jour="3"><th scope="row">Mercredi</th><td><span class="nowrap">12h – 14h30</span> · <span class="nowrap">18h30 – 22h30</span></td></tr>
+              <tr data-jour="4"><th scope="row">Jeudi</th><td><span class="nowrap">12h – 14h30</span> · <span class="nowrap">18h30 – 22h30</span></td></tr>
+              <tr data-jour="5"><th scope="row">Vendredi</th><td><span class="nowrap">12h – 14h30</span> · <span class="nowrap">18h30 – 22h30</span></td></tr>
+              <tr data-jour="6"><th scope="row">Samedi</th><td><span class="nowrap">12h – 14h30</span> · <span class="nowrap">18h30 – 22h30</span></td></tr>
+              <tr data-jour="0"><th scope="row">Dimanche</th><td>12h – 14h30</td></tr>
             </tbody>
           </table>
         </div>
@@ -595,10 +580,13 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="carte-info">
           <h3>Bon à savoir</h3>
           <ul class="puces" role="list">
-            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-couverts"/></svg>Déjeuner et dîner</li>
-            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-carte"/></svg>Cartes bancaires</li>
-            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-calendrier"/></svg>Réservation conseillée</li>
-            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-arbre"/></svg>Terrasse</li>
+            <li>Déjeuner et dîner</li>
+            <li>Cartes bancaires</li>
+            <li>Réservation conseillée</li>
+            <li>Terrasse</li>
+            <li>À emporter</li>
+            <li>Événements privés</li>
+            <li>Accessible aux personnes à mobilité réduite</li>
           </ul>
         </div>
       </div>
@@ -609,6 +597,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   <!-- ============ CONTACT ============ -->
   <section id="contact" class="section contact" aria-labelledby="titre-contact">
+    <svg class="contact__cedre" viewBox="0 0 64 74" aria-hidden="true" focusable="false"><use href="#cedre"/></svg>
     <div class="conteneur">
       <div class="tete">
         <p class="surtitre">Réservation</p>
@@ -617,7 +606,7 @@ document.addEventListener('DOMContentLoaded', function () {
       </div>
       <a class="contact__numero nowrap" href="tel:+33986225666"><span class="sr-only">Appeler le </span>09 86 22 56 66</a>
       <div class="contact__autres">
-        <p>Adresse e-mail à fournir</p>
+        <p><a href="mailto:graindecedre@hotmail.com">graindecedre@hotmail.com</a></p>
         <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener">75 Grande Rue, 89100 Sens · Itinéraire</a></p>
       </div>
     </div>
@@ -627,11 +616,11 @@ document.addEventListener('DOMContentLoaded', function () {
 <footer class="pied">
   <div class="conteneur">
     <a class="logo" href="#haut">
-      <span class="logo__arc" aria-hidden="true"><svg viewBox="0 0 64 74" focusable="false"><use href="#cedre"/></svg></span>
+      <svg viewBox="0 0 64 74" aria-hidden="true" focusable="false"><use href="#cedre"/></svg>
       <span class="logo__texte"><span class="logo__nom">Grain de Cèdre</span><span class="logo__sous">Restaurant libanais · 75 Grande Rue, Sens</span></span>
     </a>
     <div class="pied__bas">
-      <p>Maquette de démonstration réalisée par Nathan&nbsp;: ce n'est pas le site officiel de Grain de Cèdre. Photos à fournir&nbsp;; informations reprises des fiches Google et Tripadvisor de l'établissement, à valider avec lui.</p>
+      <p>Maquette de démonstration réalisée par Nathan&nbsp;: ce n'est pas le site officiel de Grain de Cèdre. Photos à fournir&nbsp;; informations reprises des fiches publiques de l'établissement (Google, Tripadvisor, page eatbu), à valider avec lui.</p>
       <a class="pied__haut" href="#haut"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-haut"/></svg>Haut de page</a>
     </div>
   </div>
