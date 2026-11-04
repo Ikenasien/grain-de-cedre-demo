@@ -10,90 +10,88 @@
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Grain de Cèdre (maquette) · Restaurant libanais à Sens">
 <meta property="og:description" content="Maquette non officielle. Cuisine libanaise et terrasse dans une cour arborée, 75 Grande Rue à Sens.">
-<meta name="theme-color" content="#f4f1ea">
+<meta name="theme-color" content="#f8dfb6">
 <meta name="color-scheme" content="light">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e4a3a'/%3E%3Cpath d='M32 9 18 27h7L13 41h9L9 54h46L42 41h9L39 27h7z' fill='%23f4f1ea'/%3E%3Crect x='29' y='52' width='6' height='6' fill='%23f4f1ea'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M6 64V30a26 26 0 0 1 52 0v34z' fill='%23123f33'/%3E%3Cg fill='%23f2b544'%3E%3Cpath d='M30 18h4l2 40h-8z'/%3E%3Cpath d='M22 26q10-11 20 0q-10 4-20 0z'/%3E%3Cpath d='M16 37q16-11 32 0q-16 4-32 0z'/%3E%3Cpath d='M11 48q21-12 42 0q-21 4-42 0z'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Karla:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;700&family=Mulish:wght@400;600;800&display=swap">
 <style>
 /* ==========================================================
-   Grain de Cèdre — maquette « Cour libanaise en plein Sens »
+   Grain de Cèdre — identité « Arcade et carreaux de ciment »
+   Tout en courbes : arcs, assiettes, frises, lumière de cour.
    Mobile d'abord (~360 px), enrichi pour tablette et bureau.
    ========================================================== */
 :root{
-  --cedre-950:#0f2a20;
-  --cedre-900:#163a2d;
-  --cedre-800:#1e4a3a;
-  --cedre-700:#29604b;
-  --cedre-500:#4f8a6d;
-  --cedre-300:#9cc3ad;
-  --cedre-100:#e2eee6;
-  --pierre-50:#fbfaf6;
-  --pierre:#f4f1ea;
-  --pierre-200:#e9e3d6;
-  --pierre-300:#d9d0bd;
-  --encre:#1b2622;
-  --encre-douce:#4c5852;
-  --sumac:#9b2f2f;
-  --sumac-clair:#f2b3a6;
-  --zaatar:#a8822e;
+  --cedre:#123f33;
+  --cedre-nuit:#0b2a22;
+  --cedre-clair:#2c6b57;
+  --abricot:#f8dfb6;
+  --abricot-clair:#fdf1dc;
+  --creme:#fff9ee;
+  --safran:#f2b544;
+  --sumac:#a4332a;
+  --sumac-fonce:#7f241d;
+  --faience:#14767a;
+  --peche:#ffd0ad;
+  --encre:#1d2a25;
+  --encre-douce:#4a5650;
 
-  --police-titre:"Amiri", Georgia, "Times New Roman", serif;
-  --police-texte:"Karla", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --police-titre:"El Messiri", Georgia, serif;
+  --police-texte:"Mulish", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
   --entete-h:4rem;
-  --barre-h:4.5rem;
-  --rayon:1.1rem;
-  --ombre:0 1px 2px rgb(22 58 45 / .06), 0 12px 26px -16px rgb(22 58 45 / .35);
-  /* Motif d'étoiles à huit branches, façon carreaux de ciment */
-  --motif:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%231e4a3a' stroke-opacity='.07' stroke-width='1.2'%3E%3Crect x='18' y='18' width='20' height='20'/%3E%3Crect x='18' y='18' width='20' height='20' transform='rotate(45 28 28)'/%3E%3C/g%3E%3C/svg%3E");
-  --motif-clair:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cg fill='none' stroke='%23f4f1ea' stroke-opacity='.07' stroke-width='1.2'%3E%3Crect x='18' y='18' width='20' height='20'/%3E%3Crect x='18' y='18' width='20' height='20' transform='rotate(45 28 28)'/%3E%3C/g%3E%3C/svg%3E");
+  --barre-h:4.75rem;
+  --arc:999px 999px 0 0;
+  /* Carreau de ciment : étoile à huit branches */
+  --carreau:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Crect width='56' height='56' fill='%23123f33'/%3E%3Cg transform='translate(28 28)'%3E%3Crect x='-15' y='-15' width='30' height='30' fill='%2314767a'/%3E%3Crect x='-15' y='-15' width='30' height='30' fill='%2314767a' transform='rotate(45)'/%3E%3Crect x='-8' y='-8' width='16' height='16' fill='%23f2b544'/%3E%3Crect x='-8' y='-8' width='16' height='16' fill='%23f2b544' transform='rotate(45)'/%3E%3Ccircle r='3.5' fill='%23a4332a'/%3E%3C/g%3E%3Cg fill='%23f8dfb6'%3E%3Ccircle cx='0' cy='0' r='6'/%3E%3Ccircle cx='56' cy='0' r='6'/%3E%3Ccircle cx='0' cy='56' r='6'/%3E%3Ccircle cx='56' cy='56' r='6'/%3E%3C/g%3E%3C/svg%3E");
+  /* Ombre de feuillage sur le fond de la cour */
+  --feuillage:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='%23fff9ee' fill-opacity='.05'%3E%3Cpath d='M20 60C24 30 44 16 70 12c-2 28-20 46-50 48zM110 40c20-14 42-14 62-4-14 20-36 26-62 4zM60 130c6-26 26-40 52-40-2 26-22 44-52 40zM130 150c12-20 30-28 50-26-8 22-26 34-50 26zM0 150c10-14 24-20 40-18-6 16-20 24-40 18z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* ---------- Base ---------- */
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:calc(var(--entete-h) + .5rem);scroll-padding-bottom:calc(var(--barre-h) + 1rem)}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
-body{margin:0;font-family:var(--police-texte);font-size:1rem;line-height:1.65;color:var(--encre);background:var(--pierre);-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:var(--police-titre);font-weight:700;line-height:1.1;margin:0;color:var(--cedre-900);text-wrap:balance}
+body{margin:0;font-family:var(--police-texte);font-size:1rem;line-height:1.7;color:var(--encre);background:var(--creme);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--police-titre);font-weight:700;line-height:1.15;margin:0;color:var(--cedre);text-wrap:balance}
 p,figure,dl,dd,address{margin:0}
 address{font-style:normal}
 ul{margin:0;padding:0;list-style:none}
-a{color:var(--cedre-700);text-decoration-thickness:.08em;text-underline-offset:.2em}
-a:hover{color:var(--cedre-900)}
-:focus-visible{outline:3px solid var(--sumac);outline-offset:3px;border-radius:.4rem}
+a{color:var(--faience);text-decoration-thickness:.08em;text-underline-offset:.2em}
+a:hover{color:var(--cedre)}
+:focus-visible{outline:3px solid var(--sumac);outline-offset:3px;border-radius:.5rem}
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
 main:focus{outline:none}
 .sprite{position:absolute;width:0;height:0;overflow:hidden}
 .ic{display:inline-block;width:1.25rem;height:1.25rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
-.conteneur{width:min(100% - 2rem, 70rem);margin-inline:auto}
-.a-confirmer{font-weight:700;color:var(--sumac)}
+.conteneur{width:min(100% - 2rem, 68rem);margin-inline:auto}
+.a-confirmer{font-weight:800;color:var(--sumac-fonce)}
+
+/* Frise de carreaux de ciment, signature de la maquette */
+.frise{height:56px;background:var(--carreau) center/56px 56px repeat-x}
 
 /* ---------- Bandeau maquette ---------- */
-.bandeau{background:var(--cedre-100);color:var(--cedre-900);border-bottom:1px solid rgb(22 58 45 / .08)}
-.bandeau p{display:flex;justify-content:center;align-items:center;gap:.5rem;padding:.45rem 1rem;font-size:.875rem;line-height:1.4;text-align:center}
-.bandeau .ic{width:1rem;height:1rem;color:var(--cedre-700)}
+.bandeau{background:var(--cedre);color:var(--creme)}
+.bandeau p{display:flex;justify-content:center;align-items:center;gap:.5rem;padding:.4rem 1rem;font-size:.875rem;line-height:1.35;text-align:center}
+.bandeau .ic{width:1rem;height:1rem;color:var(--safran)}
 
 /* ---------- Lien d'évitement ---------- */
-.evitement{position:absolute;left:1rem;top:-6rem;z-index:100;padding:.75rem 1.25rem;border-radius:999px;background:var(--cedre-900);color:var(--pierre-50);font-weight:700;text-decoration:none}
-.evitement:focus{top:.75rem;color:var(--pierre-50)}
+.evitement{position:absolute;left:1rem;top:-6rem;z-index:100;padding:.75rem 1.25rem;border-radius:999px;background:var(--cedre);color:var(--creme);font-weight:800;text-decoration:none}
+.evitement:focus{top:.75rem;color:var(--creme)}
 
 /* ---------- En-tête ---------- */
-.entete{position:sticky;top:0;z-index:40;background:rgb(244 241 234 / .95);border-bottom:1px solid rgb(22 58 45 / .1)}
-@supports ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
-  .entete{background:rgb(244 241 234 / .85);-webkit-backdrop-filter:blur(12px) saturate(1.3);backdrop-filter:blur(12px) saturate(1.3)}
-}
+.entete{position:sticky;top:0;z-index:40;background:var(--creme);box-shadow:0 8px 20px -16px rgb(18 63 51 / .6)}
 .entete__barre{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:var(--entete-h)}
-.logo{display:inline-flex;align-items:center;gap:.65rem;min-height:2.75rem;color:var(--cedre-900);text-decoration:none}
-.logo:hover{color:var(--cedre-900)}
-.logo__pastille{display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--cedre-800);color:var(--pierre)}
-.logo__pastille svg{width:1.45rem;height:1.45rem;fill:currentColor}
-.logo__texte{display:flex;flex-direction:column;line-height:1}
-.logo__nom{font-family:var(--police-titre);font-size:1.45rem;font-weight:700}
-.logo__sous{display:none;margin-top:.25rem;font-size:.75rem;font-weight:700;letter-spacing:.04em;color:var(--encre-douce)}
+.logo{display:inline-flex;align-items:center;gap:.55rem;min-height:2.75rem;color:var(--cedre);text-decoration:none}
+.logo:hover{color:var(--cedre)}
+.logo__arc{display:grid;place-items:end center;width:2.1rem;height:2.7rem;padding-bottom:.2rem;border-radius:var(--arc);background:var(--cedre);color:var(--safran)}
+.logo__arc svg{width:1.4rem;height:1.6rem;fill:currentColor}
+.logo__texte{display:flex;flex-direction:column;line-height:1.05}
+.logo__nom{font-family:var(--police-titre);font-size:1.375rem;font-weight:700}
+.logo__sous{display:none;font-size:.75rem;font-weight:600;color:var(--encre-douce)}
 
-.nav-bouton{display:none;align-items:center;justify-content:center;gap:.5rem;min-width:2.75rem;min-height:2.75rem;padding:.5rem .7rem;border:1.5px solid rgb(22 58 45 / .22);border-radius:999px;background:var(--pierre-50);color:var(--cedre-900);font:700 .9375rem var(--police-texte);cursor:pointer}
+.nav-bouton{display:none;align-items:center;justify-content:center;gap:.5rem;min-width:2.75rem;min-height:2.75rem;padding:.5rem .7rem;border:0;border-radius:999px;background:var(--abricot);color:var(--cedre);font:800 .9375rem var(--police-texte);cursor:pointer}
 .js .nav-bouton{display:inline-flex}
 .nav-bouton__libelle{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 .nav-bouton .ic-croix{display:none}
@@ -101,175 +99,170 @@ main:focus{outline:none}
 .nav-bouton[aria-expanded="true"] .ic-croix{display:inline-block}
 
 .nav__liste{display:flex;flex-wrap:wrap;gap:.25rem}
-.nav__lien{display:flex;align-items:center;min-height:2.75rem;padding:.5rem .8rem;border-radius:.8rem;color:var(--cedre-900);font-weight:700;text-decoration:none}
-.nav__lien:hover{background:var(--cedre-100);color:var(--cedre-900)}
-.nav__tel{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:.5rem 1rem;border-radius:999px;background:var(--cedre-800);color:var(--pierre-50);font-weight:700;text-decoration:none}
-.nav__tel:hover{background:var(--cedre-900);color:var(--pierre-50)}
+.nav__lien{display:flex;align-items:center;min-height:2.75rem;padding:.5rem .85rem;border-radius:999px;color:var(--cedre);font-weight:800;text-decoration:none}
+.nav__lien:hover{background:var(--abricot);color:var(--cedre)}
+.nav__tel{display:inline-flex;align-items:center;gap:.5rem;min-height:2.75rem;padding:.5rem 1.1rem;border-radius:999px;background:var(--sumac);color:var(--creme);font-weight:800;text-decoration:none}
+.nav__tel:hover{background:var(--sumac-fonce);color:var(--creme)}
 /* Sans JS : la navigation passe sous le logo */
 .entete__barre{flex-wrap:wrap;padding-block:.5rem}
 .nav{flex-basis:100%}
 .js .entete__barre{flex-wrap:nowrap;padding-block:0}
-.js .nav{position:absolute;top:100%;left:0;right:0;max-height:calc(100dvh - 4rem);overflow-y:auto;padding:.5rem 1rem 1.25rem;background:var(--pierre-50);border-bottom:1px solid rgb(22 58 45 / .12);box-shadow:0 24px 30px -24px rgb(22 58 45 / .5);visibility:hidden;opacity:0;transform:translateY(-.5rem);transition:opacity .2s ease,transform .2s ease,visibility 0s .2s}
+.js .nav{position:absolute;top:calc(100% + .5rem);left:.75rem;right:.75rem;max-height:calc(100dvh - 6rem);overflow-y:auto;padding:1rem 1.25rem 1.25rem;border-radius:1.5rem;background:var(--creme);box-shadow:0 24px 40px -18px rgb(18 63 51 / .55);visibility:hidden;opacity:0;transform:translateY(-.5rem);transition:opacity .2s ease,transform .2s ease,visibility 0s .2s}
 .js .nav.est-ouvert{visibility:visible;opacity:1;transform:none;transition:opacity .2s ease,transform .2s ease}
-.js .nav__liste{flex-direction:column;flex-wrap:nowrap;gap:0;width:min(100%, 40rem);margin-inline:auto}
-.js .nav__lien{min-height:3.25rem;padding-inline:.25rem;border-radius:0;border-bottom:1px solid rgb(22 58 45 / .12);font-family:var(--police-titre);font-size:1.4rem}
-.js .nav__lien:hover{background:none;color:var(--cedre-700)}
-.js .nav__tel{justify-content:center;width:100%;min-height:3rem;margin-top:1rem}
+.js .nav__liste{flex-direction:column;flex-wrap:nowrap;align-items:center;gap:0}
+.js .nav__liste li{width:100%}
+.js .nav__lien{justify-content:center;min-height:3.25rem;font-family:var(--police-titre);font-weight:700;font-size:1.5rem}
+.js .nav__tel{justify-content:center;width:100%;min-height:3rem;margin-top:.75rem}
 
 /* ---------- Boutons ---------- */
-.bouton{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3rem;padding:.75rem 1.4rem;border-radius:999px;font-weight:700;font-size:1rem;line-height:1.2;text-align:center;text-decoration:none;transition:background-color .2s ease,transform .2s ease}
-.bouton--plein{background:var(--cedre-800);color:var(--pierre-50);box-shadow:0 10px 20px -12px rgb(22 58 45 / .8)}
-.bouton--plein:hover{background:var(--cedre-900);color:var(--pierre-50);transform:translateY(-1px)}
-.bouton--contour{border:2px solid rgb(30 74 58 / .5);color:var(--cedre-800);background:rgb(251 250 246 / .6)}
-.bouton--contour:hover{border-color:var(--cedre-800);background:var(--cedre-100);color:var(--cedre-900)}
-.bouton--clair{background:var(--pierre);color:var(--cedre-900)}
-.bouton--clair:hover{background:var(--pierre-50);color:var(--cedre-900)}
+.bouton{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.125rem;padding:.75rem 1.6rem;border-radius:999px;font-weight:800;font-size:1rem;line-height:1.2;text-align:center;text-decoration:none;transition:background-color .2s ease,transform .2s ease}
+.bouton:hover{transform:translateY(-2px)}
+.bouton--sumac{background:var(--sumac);color:var(--creme)}
+.bouton--sumac:hover{background:var(--sumac-fonce);color:var(--creme)}
+.bouton--cedre{background:var(--cedre);color:var(--creme)}
+.bouton--cedre:hover{background:var(--cedre-nuit);color:var(--creme)}
+.bouton--lien{color:var(--cedre);box-shadow:inset 0 0 0 2px var(--cedre)}
+.bouton--lien:hover{background:var(--cedre);color:var(--creme)}
+.bouton--safran{background:var(--safran);color:var(--cedre-nuit)}
+.bouton--safran:hover{background:#f7c766;color:var(--cedre-nuit)}
 
-/* ---------- Titres de section ---------- */
-.section{padding-block:clamp(2.75rem, 9vw, 6rem)}
-.tete{max-width:42rem;margin-bottom:clamp(1.5rem, 5vw, 2.75rem)}
-.surtitre{display:flex;align-items:center;gap:.6rem;margin-bottom:.5rem;font-size:.8125rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sumac)}
-.surtitre::before{content:"";width:1.75rem;height:2px;background:currentColor}
-.tete h2{font-size:clamp(2.2rem, 5.5vw + 1rem, 3.4rem)}
-.chapo{margin-top:1rem;font-size:1.125rem;line-height:1.6;color:var(--encre-douce)}
+/* ---------- Titres de section : centrés ---------- */
+.section{padding-block:clamp(3rem, 9vw, 6rem)}
+.tete{max-width:40rem;margin:0 auto clamp(1.75rem, 5vw, 3rem);text-align:center}
+.surtitre{margin-bottom:.35rem;font-family:var(--police-titre);font-size:1.25rem;font-weight:500;color:var(--sumac)}
+.tete h2{font-size:clamp(2.25rem, 5vw + 1rem, 3.5rem)}
+.chapo{margin-top:.9rem;font-size:1.125rem;color:var(--encre-douce)}
 
-/* ---------- Emplacements photo (à fournir) ---------- */
-.photo{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:4/3;max-height:50vh;max-height:50svh;border-radius:var(--rayon);background:var(--motif) 0 0/56px 56px, linear-gradient(160deg, var(--pierre-200), var(--cedre-100));box-shadow:inset 0 0 0 1px rgb(22 58 45 / .08), var(--ombre)}
-.photo::before{content:"";position:absolute;inset:.6rem;z-index:-1;border:1.5px dashed rgb(30 74 58 / .25);border-radius:calc(var(--rayon) - .4rem)}
-.photo__art{position:absolute;inset:0;z-index:-1;display:grid;place-items:center;color:var(--cedre-700)}
-.photo__art .ic{width:min(22%, 4.5rem);height:auto;aspect-ratio:1;stroke-width:1.1;opacity:.6;transform:translateY(-14%)}
-.photo figcaption{position:absolute;left:.85rem;right:.85rem;bottom:.85rem;display:flex;align-items:flex-start;gap:.55rem;padding:.55rem .85rem;border-radius:.8rem;background:rgb(251 250 246 / .94);font-size:.9375rem;line-height:1.4}
-.photo figcaption .ic{width:1.1rem;height:1.1rem;margin-top:.1rem;color:var(--cedre-700)}
-.photo__mention{font-weight:700;color:var(--cedre-800)}
+/* ---------- Emplacements photo : niches en arc ---------- */
+.photo{position:relative;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;border-radius:var(--arc);background:radial-gradient(70% 45% at 50% 30%, rgb(255 249 238 / .55), transparent),linear-gradient(180deg, var(--peche), var(--abricot-clair));box-shadow:inset 0 0 0 2px rgb(18 63 51 / .18)}
+.photo::before{content:"";position:absolute;inset:.45rem .45rem 0;border:1.5px dashed rgb(18 63 51 / .3);border-bottom:0;border-radius:var(--arc)}
+.photo figcaption{position:relative;margin:0 .5rem .6rem;padding:.2rem .6rem;border-radius:.8rem;background:rgb(255 249 238 / .94);font-size:.8125rem;line-height:1.3;text-align:center;color:var(--encre)}
+.photo__mention{display:block;font-weight:800;color:var(--sumac-fonce)}
+.photo__sujet{display:none}
 
-/* ---------- Accueil ---------- */
-.accueil{position:relative;overflow-x:clip;padding-block:2rem 3rem;background:var(--motif) 0 0/56px 56px, radial-gradient(50rem 26rem at 100% 0%, rgb(79 138 109 / .18), transparent 62%), var(--pierre)}
-.accueil__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:2.5rem;align-items:center}
-.accueil__pastille{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .9rem;border-radius:999px;background:var(--pierre-50);border:1px solid rgb(22 58 45 / .14);font-size:.8125rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--cedre-800)}
-.accueil__titre{margin-top:1rem;font-size:clamp(3.4rem, 15vw, 6.75rem);line-height:.92;letter-spacing:-.01em}
-.accueil__titre span{display:block;color:var(--cedre-700)}
-.accueil__lieu{display:flex;align-items:flex-start;gap:.5rem;margin-top:1.1rem;font-weight:700;color:var(--cedre-800)}
-.accueil__lieu .ic{margin-top:.2rem;color:var(--sumac)}
-.accueil__note{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.25rem .5rem;margin-top:.8rem;padding:.35rem .85rem;border-radius:999px;border:1px solid rgb(22 58 45 / .16);background:rgb(251 250 246 / .75);font-size:.875rem;font-weight:700;color:var(--encre-douce)}
-.accueil__note .etoiles{color:var(--zaatar);letter-spacing:.05em}
-.accueil__intro{max-width:34rem;margin-top:1.25rem;font-size:1.125rem;line-height:1.65}
-.accueil__actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+/* ---------- Accueil : soleil et triple arcade ---------- */
+.accueil{position:relative;overflow:clip;padding-top:clamp(2rem, 6vw, 4rem);background:radial-gradient(34rem 34rem at 50% -6rem, rgb(242 181 68 / .75), transparent 70%),var(--abricot);text-align:center}
+.accueil .a-confirmer{color:var(--sumac-fonce)}
+.accueil__pastille{font-family:var(--police-titre);font-size:1.3125rem;font-weight:500;color:var(--sumac-fonce)}
+.accueil__titre{margin-top:.1rem;font-size:clamp(3.6rem, 17vw, 8rem);line-height:.98}
+.accueil__titre span{color:var(--sumac)}
+.accueil__intro{max-width:38rem;margin:1rem auto 0;font-size:1.125rem;line-height:1.6}
+.accueil__actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:1.5rem}
 .accueil__actions .bouton{flex:1 1 100%}
-.accueil__fiche{display:grid;gap:.85rem;max-width:34rem;margin-top:1.75rem;padding-top:1.25rem;border-top:1px solid rgb(22 58 45 / .15);color:var(--encre-douce)}
-.accueil__fiche p{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem}
-.accueil__fiche .ic{width:1.1rem;height:1.1rem;color:var(--cedre-700)}
-.accueil__itineraire{display:inline-flex;align-items:center;gap:.4rem;min-height:2.75rem;padding:0 1rem;border-radius:999px;background:var(--cedre-100);color:var(--cedre-900);font-weight:700;text-decoration:none}
-.accueil__itineraire:hover{background:var(--cedre-300);color:var(--cedre-900)}
-.accueil__visuel{position:relative;width:100%;max-width:22rem;margin-inline:auto}
-.photo--arche{aspect-ratio:4/5;border-radius:12rem 12rem var(--rayon) var(--rayon)}
-.photo--arche::before{border-radius:11.5rem 11.5rem calc(var(--rayon) - .4rem) calc(var(--rayon) - .4rem)}
+.accueil__fiche{display:grid;justify-items:center;gap:.35rem;max-width:40rem;margin:1.5rem auto 0;font-size:.9688rem}
+.accueil__fiche .etoiles{color:var(--sumac);letter-spacing:.06em}
+.accueil__fiche a{color:var(--cedre);font-weight:800}
 
-/* ---------- La cuisine ---------- */
-.cuisine{background:var(--pierre-50);border-block:1px solid rgb(22 58 45 / .08)}
-.plats{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
-.plat{display:grid;grid-template-columns:auto 1fr;align-items:start;gap:.2rem 1rem;padding:1.2rem 1.25rem;border-radius:var(--rayon);background:var(--pierre);border:1px solid rgb(22 58 45 / .1)}
-.plat__icone{grid-row:1 / span 3;display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;background:var(--cedre-100);color:var(--cedre-800)}
-.plat__icone .ic{width:1.5rem;height:1.5rem}
-.plat h3{font-size:1.45rem}
-.plat p{color:var(--encre-douce)}
+.arcade{display:grid;grid-template-columns:1fr 1.3fr 1fr;align-items:end;gap:clamp(.4rem, 2vw, 1.25rem);max-width:54rem;margin:2rem auto 0;padding-inline:1rem}
+.arcade .photo{aspect-ratio:3/4.6}
+.arcade__centre{position:relative;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;aspect-ratio:3/4.4;border-radius:var(--arc);background:var(--cedre);color:var(--abricot)}
+.arcade__centre::before{content:"";position:absolute;top:14%;left:27%;width:46%;aspect-ratio:1;border-radius:50%;background:var(--safran)}
+.arcade__centre svg{position:relative;width:82%;height:auto;margin-bottom:0;fill:currentColor}
+
+/* ---------- La cuisine : la table de mezzes ---------- */
+.cuisine{background:var(--creme)}
+.vedette{position:relative;max-width:40rem;margin:0 auto 2.5rem;padding:clamp(4rem, 14vw, 6.5rem) clamp(1.5rem, 6vw, 4rem) 2.25rem;border-radius:20rem 20rem 1.5rem 1.5rem;background:var(--cedre);text-align:center;color:var(--creme)}
+.vedette svg{display:block;width:3rem;height:3.5rem;margin:0 auto .5rem;fill:var(--safran)}
+.vedette h3{font-size:clamp(1.875rem, 3vw + 1rem, 2.625rem);color:var(--creme)}
+.vedette p{margin-top:.5rem}
+.vedette .a-confirmer{color:var(--peche)}
+.plats{display:grid;grid-template-columns:minmax(0,1fr);gap:1.5rem}
+.plat{display:grid;grid-template-columns:auto 1fr;align-items:center;column-gap:1rem}
+.plat__assiette{grid-row:1 / span 3;display:grid;place-items:center;width:5.5rem;height:5.5rem;border-radius:50%;background:radial-gradient(circle, var(--creme) 54%, transparent 55%),conic-gradient(from 0deg, var(--faience) 0 8%, var(--safran) 0 16.66%, var(--faience) 0 25%, var(--sumac) 0 33.33%, var(--faience) 0 41.66%, var(--safran) 0 50%, var(--faience) 0 58.33%, var(--sumac) 0 66.66%, var(--faience) 0 75%, var(--safran) 0 83.33%, var(--faience) 0 91.66%, var(--sumac) 0);box-shadow:0 8px 16px -10px rgb(18 63 51 / .7);color:var(--cedre)}
+.plat__assiette .ic{width:1.75rem;height:1.75rem}
+.plat h3{font-size:1.5rem}
+.plat p{color:var(--encre-douce);line-height:1.5}
 .plat__prix{font-size:.9rem}
-.plat--vedette{background:var(--cedre-800);border-color:transparent;background-image:var(--motif-clair);background-size:56px 56px}
-.plat--vedette h3{color:var(--pierre-50)}
-.plat--vedette p{color:#d5e3da}
-.plat--vedette .plat__icone{background:var(--pierre);color:var(--cedre-900)}
-.plat--vedette .a-confirmer{color:var(--sumac-clair)}
-.carte-a-venir{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-top:1.5rem;padding:1.1rem 1.25rem;border:1.5px dashed rgb(155 47 47 / .35);border-radius:var(--rayon);background:rgb(155 47 47 / .04)}
-.carte-a-venir p{max-width:36rem}
+.carte-a-venir{display:grid;justify-items:center;gap:.9rem;max-width:44rem;margin:2.5rem auto 0;text-align:center}
 
-/* ---------- La cour ---------- */
-.cour__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem}
-.cour__photos{display:grid;gap:1rem}
-.atouts{display:grid;gap:.75rem;margin-top:1.5rem}
+/* ---------- La cour : à l'ombre des arbres ---------- */
+.cour{background:var(--feuillage) 0 0/180px 180px, var(--cedre);color:var(--creme)}
+.cour .tete h2,.cour h3{color:var(--creme)}
+.cour .surtitre{color:var(--safran)}
+.cour .chapo{color:#dbe7df}
+.cour .a-confirmer{color:var(--peche)}
+.cour :focus-visible{outline-color:var(--safran)}
+.cour__niches{display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:1rem;max-width:40rem;margin:0 auto 2.25rem}
+.cour__niches .photo{aspect-ratio:3/4}
+.cour__niches .photo:first-child{aspect-ratio:3/4.6}
+.atouts{display:grid;gap:.85rem;max-width:34rem;margin-inline:auto}
 .atouts li{display:flex;align-items:flex-start;gap:.75rem;line-height:1.45}
-.atouts .ic{width:1.5rem;height:1.5rem;margin-top:.05rem;color:var(--cedre-700)}
-.acces{margin-top:1.75rem;padding:1.1rem 1.25rem;border-radius:var(--rayon);background:var(--cedre-100);color:var(--cedre-900)}
-.acces h3{font-size:1.35rem;margin-bottom:.35rem}
-.groupes{margin-top:1rem;padding:1.1rem 1.25rem;border-radius:var(--rayon);border:1px solid rgb(22 58 45 / .12);background:var(--pierre-50)}
-.groupes h3{font-size:1.35rem;margin-bottom:.35rem}
+.atouts .ic{width:1.5rem;height:1.5rem;margin-top:.05rem;color:var(--safran)}
+.cour__encarts{display:grid;gap:1rem;max-width:56rem;margin:2.25rem auto 0}
+.encart{padding:1.25rem 1.4rem;border-radius:1.5rem;background:rgb(255 249 238 / .09)}
+.encart h3{font-size:1.5rem;margin-bottom:.25rem}
 
 /* ---------- Infos pratiques ---------- */
-.infos{background:var(--pierre-200)}
-.infos__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
-.carte-info{padding:1.2rem 1.25rem 1.3rem;border-radius:var(--rayon);background:var(--pierre-50);border:1px solid rgb(22 58 45 / .1);box-shadow:var(--ombre)}
-.carte-info__tete{display:flex;align-items:center;gap:.8rem;margin-bottom:.85rem}
-.rond{display:grid;place-items:center;flex:none;width:2.75rem;height:2.75rem;border-radius:50%;background:var(--cedre-100);color:var(--cedre-800)}
-.rond .ic{width:1.35rem;height:1.35rem}
-.carte-info h3{font-size:1.4rem}
-.carte-info address{font-size:1.125rem;font-weight:700;line-height:1.45;color:var(--cedre-900)}
+.infos{background:var(--abricot-clair)}
+.infos__grille{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem}
+.carte-info{padding:1.4rem;border-radius:1.5rem;background:var(--creme);box-shadow:0 12px 26px -20px rgb(18 63 51 / .5)}
+.carte-info h3{margin-bottom:.5rem;font-size:1.625rem}
+.carte-info address{font-size:1.125rem;font-weight:800;line-height:1.45;color:var(--cedre)}
 .carte-info__note{margin-top:.35rem;color:var(--encre-douce)}
-.carte-info__plan{display:block;width:100%;aspect-ratio:4/3;max-height:18rem;margin-top:1rem;border:0;border-radius:.8rem;background:var(--pierre-200)}
+.carte-info__plan{display:block;width:100%;aspect-ratio:4/3;max-height:18rem;margin-top:1rem;border:0;border-radius:1rem;background:var(--abricot)}
 .carte-info .bouton{margin-top:1.1rem}
 .puces{display:flex;flex-wrap:wrap;gap:.5rem}
-.puces li{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .85rem;border-radius:999px;background:var(--cedre-100);color:var(--cedre-900);font-weight:700;font-size:.9375rem}
+.puces li{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .85rem;border-radius:999px;background:var(--abricot);color:var(--cedre);font-weight:800;font-size:.9375rem}
 .puces .ic{width:1.05rem;height:1.05rem}
 
-.horaires{width:100%;border-collapse:collapse}
-.horaires caption{text-align:left;margin-bottom:.5rem}
-.horaires th,.horaires td{padding:.55rem .35rem;border-bottom:1px solid rgb(22 58 45 / .1);text-align:left;font-weight:400;vertical-align:top}
+/* Les horaires dans une niche en arc */
+.carte-info--horaires{padding-top:clamp(3.5rem, 12vw, 5rem);border-radius:16rem 16rem 1.5rem 1.5rem;background:var(--faience);color:var(--creme);text-align:center}
+.carte-info--horaires h3{color:var(--creme)}
+.carte-info--horaires .a-confirmer,.carte-info--horaires .carte-info__note{color:var(--creme);font-weight:800}
+.horaires{width:100%;margin-top:.75rem;border-collapse:collapse;text-align:left}
+.horaires th,.horaires td{padding:.55rem .5rem;border-bottom:1px solid rgb(255 249 238 / .28);font-weight:400;vertical-align:top}
 .horaires tr:last-child th,.horaires tr:last-child td{border-bottom:0}
-.horaires th{color:var(--encre-douce)}
-.horaires td{text-align:right;font-weight:700;color:var(--cedre-900);font-variant-numeric:tabular-nums}
-.horaires .ferme td{color:var(--sumac)}
-.horaires .aujourdhui{background:var(--cedre-100)}
-.horaires .aujourdhui th{font-weight:700;color:var(--cedre-900)}
-.aujourdhui__mot{display:inline-block;margin-left:.4rem;padding:0 .5rem;border-radius:999px;background:var(--cedre-800);color:var(--pierre-50);font-size:.75rem;font-weight:700;letter-spacing:.04em}
+.horaires td{text-align:right;font-weight:800;font-variant-numeric:tabular-nums}
+.horaires .ferme td{color:var(--peche)}
+.horaires .aujourdhui{background:var(--cedre)}
+.horaires .aujourdhui th{font-weight:800}
+.horaires .aujourdhui th,.horaires .aujourdhui td{border-bottom-color:transparent}
+.aujourdhui__mot{display:inline-block;margin-left:.4rem;padding:0 .5rem;border-radius:999px;background:var(--safran);color:var(--cedre-nuit);font-size:.75rem;font-weight:800}
 
-/* ---------- Contact ---------- */
-.contact{background:var(--cedre-900);background-image:var(--motif-clair), radial-gradient(50rem 26rem at 100% 0%, rgb(79 138 109 / .28), transparent 60%);background-size:56px 56px, auto;color:var(--pierre)}
-.contact .tete h2{color:var(--pierre-50)}
-.contact .surtitre{color:var(--sumac-clair)}
-.contact .chapo{color:#d5e3da}
-.contact :focus-visible{outline-color:var(--pierre)}
-.contact__cartes{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
-.contact-carte{display:flex;flex-direction:column;align-items:flex-start;gap:.3rem;height:100%;padding:1.5rem 1.4rem;border-radius:var(--rayon);background:rgb(244 241 234 / .06);border:1px solid rgb(244 241 234 / .18);color:var(--pierre);text-decoration:none;transition:background-color .2s ease,transform .2s ease}
-a.contact-carte:hover{color:var(--pierre);background:rgb(244 241 234 / .12);transform:translateY(-2px)}
-.contact-carte__icone{display:grid;place-items:center;width:3rem;height:3rem;margin-bottom:.6rem;border-radius:50%;background:var(--pierre);color:var(--cedre-900)}
-.contact-carte__icone .ic{width:1.4rem;height:1.4rem}
-.contact-carte__type{font-size:.8125rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--cedre-300)}
-.contact-carte__valeur{font-family:var(--police-titre);font-size:1.7rem;font-weight:700;line-height:1.2;color:var(--pierre-50)}
-.contact-carte__valeur--petit{font-family:var(--police-texte);font-size:1.0625rem}
-.contact-carte__action{display:inline-flex;align-items:center;gap:.45rem;margin-top:auto;padding-top:1rem;font-weight:700;color:var(--sumac-clair)}
-.contact-carte__action .ic{width:1.1rem;height:1.1rem}
+/* ---------- Réservation ---------- */
+.contact{background:var(--sumac);color:var(--creme);text-align:center}
+.contact .tete{margin-bottom:1.25rem}
+.contact .tete h2{color:var(--creme)}
+.contact .surtitre{color:var(--peche)}
+.contact .chapo{color:var(--creme)}
+.contact :focus-visible{outline-color:var(--safran)}
+.contact__numero{display:block;font-family:var(--police-titre);font-weight:700;font-size:clamp(2.5rem, 11vw, 5.5rem);line-height:1.1;color:var(--creme);text-decoration:none}
+.contact__numero:hover{color:var(--safran)}
+.contact__autres{display:grid;gap:.25rem;margin-top:1.5rem}
+.contact__autres a{color:var(--creme);font-weight:800}
+.contact__autres a:hover{color:var(--safran)}
 
 /* ---------- Pied de page ---------- */
-.pied{padding-block:2.5rem calc(1.5rem + var(--barre-h) + env(safe-area-inset-bottom, 0px));background:var(--cedre-950);color:#c9d6ce}
-.pied a{color:var(--pierre-50)}
-.pied :focus-visible{outline-color:var(--pierre)}
-.pied .logo{color:var(--pierre-50)}
-.pied .logo__sous{color:#a9bcb1}
-.pied__bas{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 1.5rem;margin-top:1.75rem;padding-top:1.25rem;border-top:1px solid rgb(244 241 234 / .12)}
+.pied{padding-block:2.5rem calc(1.5rem + var(--barre-h) + env(safe-area-inset-bottom, 0px));background:var(--cedre-nuit);color:#c9d6ce;text-align:center}
+.pied a{color:var(--creme)}
+.pied :focus-visible{outline-color:var(--safran)}
+.pied .logo{color:var(--creme)}
+.pied .logo__sous{display:block;color:#a9bcb1}
+.pied__bas{display:grid;justify-items:center;gap:.75rem;margin-top:1.25rem}
 .pied__bas p{max-width:44rem}
-.pied__haut{display:inline-flex;align-items:center;gap:.4rem;min-height:2.75rem;font-weight:700;text-decoration:none}
+.pied__haut{display:inline-flex;align-items:center;gap:.4rem;min-height:2.75rem;font-weight:800;text-decoration:none}
 .pied__haut .ic{width:1rem;height:1rem}
 
-/* ---------- Barre d'actions (téléphone et tablette) ---------- */
-.barre-actions{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:.5rem;padding:.5rem .75rem calc(.5rem + env(safe-area-inset-bottom, 0px));background:rgb(251 250 246 / .96);border-top:1px solid rgb(22 58 45 / .12)}
-.barre-actions a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.2rem;min-height:3.5rem;padding:.35rem .25rem;border-radius:1rem;background:var(--cedre-100);color:var(--cedre-900);font-size:.8125rem;font-weight:700;line-height:1.1;text-align:center;text-decoration:none}
-.barre-actions .ic{width:1.35rem;height:1.35rem}
-.barre-actions .barre-actions__appel{background:var(--cedre-800);color:var(--pierre-50)}
+/* ---------- Barre d'actions : une pilule flottante ---------- */
+.barre-actions{position:fixed;left:.6rem;right:.6rem;bottom:calc(.6rem + env(safe-area-inset-bottom, 0px));z-index:30;display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:.25rem;padding:.3rem;border-radius:999px;background:var(--cedre);box-shadow:0 12px 24px -10px rgb(11 42 34 / .75)}
+.barre-actions a{display:flex;align-items:center;justify-content:center;gap:.35rem;min-height:3rem;padding:.25rem;border-radius:999px;color:var(--creme);font-size:.875rem;font-weight:800;line-height:1.1;text-align:center;text-decoration:none}
+.barre-actions .ic{width:1.15rem;height:1.15rem}
+.barre-actions .barre-actions__appel{background:var(--safran);color:var(--cedre-nuit)}
 
 /* ---------- Apparition douce ---------- */
 @media (prefers-reduced-motion:no-preference){
-  .accueil__texte > *{animation:monte .7s cubic-bezier(.2,.7,.2,1) both}
-  .accueil__texte > :nth-child(2){animation-delay:.06s}
-  .accueil__texte > :nth-child(3){animation-delay:.12s}
-  .accueil__texte > :nth-child(4){animation-delay:.18s}
-  .accueil__texte > :nth-child(5){animation-delay:.24s}
-  .accueil__visuel{animation:monte .9s .15s cubic-bezier(.2,.7,.2,1) both}
+  .arcade > *{animation:monte .8s cubic-bezier(.2,.7,.2,1) both}
+  .arcade > :nth-child(2){animation-delay:.1s}
+  .arcade > :nth-child(3){animation-delay:.2s}
 }
-@keyframes monte{from{transform:translateY(12px)}to{transform:none}}
+@keyframes monte{from{transform:translateY(24px)}to{transform:none}}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }
 
 /* ---------- Dès 18em : numéros et horaires insécables ---------- */
 @media (min-width:18em){
-  .nowrap,.nav__tel,.horaires td{white-space:nowrap}
+  .nowrap,.nav__tel,.horaires td,.logo__nom{white-space:nowrap}
 }
 /* ---------- Sous 15em (texte très agrandi) : rien ne déborde ---------- */
 @media not all and (min-width:15em){
@@ -277,12 +270,20 @@ a.contact-carte:hover{color:var(--pierre);background:rgb(244 241 234 / .12);tran
   .barre-actions{display:none}
   .pied{padding-bottom:1.5rem}
   .entete .logo__texte{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
-  .accueil__titre{font-size:min(3.4rem, 30vw)}
-  .tete h2{font-size:min(2.2rem, 18vw)}
+  .accueil__titre{font-size:min(3.6rem, 22vw)}
+  .tete h2{font-size:min(2.25rem, 15vw)}
   .plat{grid-template-columns:minmax(0,1fr)}
-  .plat__icone{grid-row:auto}
-  .photo figcaption{position:relative;inset:auto;margin:.85rem}
-  .photo{display:flex;flex-direction:column;justify-content:flex-end;overflow:visible}
+  .plat__assiette{grid-row:auto}
+  .arcade{grid-template-columns:minmax(0,1fr)}
+  .arcade .photo{aspect-ratio:auto;min-height:8rem}
+  .contact__numero{font-size:min(2.5rem, 13vw)}
+}
+
+/* ---------- Sous 22.5em : les horaires tiennent dans la niche ---------- */
+@media not all and (min-width:22.5em){
+  .carte-info--horaires{padding-inline:.65rem}
+  .horaires{font-size:.9375rem}
+  .horaires th,.horaires td{padding-inline:.35rem}
 }
 
 /* ---------- Petits écrans confortables ---------- */
@@ -293,21 +294,18 @@ a.contact-carte:hover{color:var(--pierre);background:rgb(244 241 234 / .12);tran
 
 /* ---------- Tablette ---------- */
 @media (min-width:30em){
-  :root{--barre-h:3.75rem}
   .logo__sous{display:block}
   .accueil__actions .bouton{flex:0 0 auto}
-  .barre-actions a{flex-direction:row;gap:.5rem;min-height:2.75rem}
+  .photo figcaption{font-size:.875rem}
 }
 @media (min-width:40em){
-  .plats{grid-template-columns:1fr 1fr}
-  .plat--vedette{grid-column:1 / -1}
-  .cour__photos{grid-template-columns:1.4fr 1fr}
-  .cour__photos .photo:last-child{aspect-ratio:auto}
+  .photo__sujet{display:block}
+  .plats{grid-template-columns:1fr 1fr;column-gap:2.5rem}
+  .cour__encarts{grid-template-columns:1fr 1fr}
 }
 @media (min-width:48em){
   .infos__grille{grid-template-columns:1fr 1fr}
   .carte-info--horaires{grid-row:1 / span 2}
-  .contact__cartes{grid-template-columns:repeat(3, 1fr)}
 }
 
 /* ---------- Bureau ---------- */
@@ -318,19 +316,22 @@ a.contact-carte:hover{color:var(--pierre);background:rgb(244 241 234 / .12);tran
   .barre-actions{display:none}
   .pied{padding-bottom:1.5rem}
   .js .nav-bouton{display:none}
-  .nav,.js .nav,.js .nav.est-ouvert{position:static;flex-basis:auto;max-height:none;overflow:visible;padding:0;background:none;border:0;box-shadow:none;visibility:visible;opacity:1;transform:none;transition:none}
+  .nav,.js .nav,.js .nav.est-ouvert{position:static;flex-basis:auto;max-height:none;overflow:visible;padding:0;border-radius:0;background:none;box-shadow:none;visibility:visible;opacity:1;transform:none;transition:none}
   .entete__barre{flex-wrap:nowrap;padding-block:0}
-  .nav__liste,.js .nav__liste{flex-direction:row;flex-wrap:nowrap;align-items:center;gap:.15rem;width:auto}
-  .nav__lien,.js .nav__lien{min-height:2.75rem;padding:.5rem .8rem;border:0;border-radius:999px;font-family:var(--police-texte);font-size:.9688rem}
-  .nav__lien:hover,.js .nav__lien:hover{background:var(--cedre-100)}
-  .nav__lien[aria-current]{color:var(--sumac)}
+  .nav__liste,.js .nav__liste{flex-direction:row;flex-wrap:nowrap;align-items:center;gap:.15rem}
+  .js .nav__liste li{width:auto}
+  .nav__lien,.js .nav__lien{min-height:2.75rem;padding:.5rem .85rem;font-family:var(--police-texte);font-weight:800;font-size:.9688rem;white-space:nowrap}
+  .nav__lien[aria-current]{background:var(--abricot)}
   .nav__tel,.js .nav__tel{width:auto;margin:0 0 0 .6rem}
-  .accueil{padding-block:4rem 5rem}
-  .accueil__grille{grid-template-columns:minmax(0, 1.15fr) minmax(0, .85fr);gap:3.5rem}
-  .plats{grid-template-columns:repeat(3, 1fr)}
-  .plat--vedette{grid-column:1 / span 2;grid-row:span 1}
-  .cour__grille{grid-template-columns:minmax(0, 1.1fr) minmax(0, .9fr);gap:3.5rem;align-items:start}
-  .cour__photos{grid-template-columns:1fr;position:sticky;top:6rem}
+  .plats{grid-template-columns:repeat(6, 1fr);column-gap:2rem;row-gap:2.5rem}
+  .plat{grid-column:span 2;grid-template-columns:minmax(0,1fr);align-content:start;justify-items:center;text-align:center}
+  .plat:nth-child(4){grid-column:2 / span 2}
+  .plat__assiette{grid-row:auto;width:9rem;height:9rem;margin-bottom:1rem}
+  .plat__assiette .ic{width:2.75rem;height:2.75rem}
+  .cour__grille{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3.5rem;align-items:center}
+  .cour__grille .cour__niches{margin:0}
+  .cour .tete{text-align:left;margin-inline:0}
+  .atouts{margin-inline:0}
 }
 @media print{
   .entete,.barre-actions,.nav-bouton,.carte-info__plan{display:none}
@@ -389,24 +390,20 @@ document.addEventListener('DOMContentLoaded', function () {
 <a class="evitement" href="#contenu">Aller au contenu</a>
 
 <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-  <symbol id="cedre" viewBox="0 0 64 64"><path d="M32 6 17 26h7L12 41h9L8 55h48L43 41h9L40 26h7z"/><rect x="29" y="54" width="6" height="7"/></symbol>
+  <symbol id="cedre" viewBox="0 0 64 74"><path d="M30 8H34L36 73H28Z"/><path d="M21 14Q32 2 43 14Q32 18 21 14Z"/><path d="M13 27Q32 14 51 27Q32 31 13 27Z"/><path d="M6 41Q32 27 58 41Q32 45 6 41Z"/><path d="M1 55Q32 40 63 55Q32 59 1 55Z"/></symbol>
   <symbol id="i-tel" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
   <symbol id="i-horloge" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
   <symbol id="i-fleche" viewBox="0 0 24 24"><path d="M3 11 21 3l-8 18-2-8z"/></symbol>
-  <symbol id="i-photo" viewBox="0 0 24 24"><path d="M4 7h3l2-3h6l2 3h3v13H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
   <symbol id="i-assiette" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.5"/></symbol>
   <symbol id="i-mezze" viewBox="0 0 24 24"><circle cx="7" cy="8" r="3.5"/><circle cx="17" cy="8" r="3.5"/><circle cx="7" cy="17" r="3.5"/><circle cx="17" cy="17" r="3.5"/></symbol>
   <symbol id="i-feuille" viewBox="0 0 24 24"><path d="M5 19C5 10 10 5 20 4c0 10-5 15-14 15z"/><path d="M5 19 13 11"/></symbol>
   <symbol id="i-verre" viewBox="0 0 24 24"><path d="M7 3h10l-1 7a4 4 0 0 1-8 0zM12 14v7M8 21h8"/></symbol>
   <symbol id="i-dessert" viewBox="0 0 24 24"><path d="M4 13h16l-2 7H6zM12 13c0-4 2-6 5-7M8 13c0-3 1-5 3-6"/></symbol>
-  <symbol id="i-etoile" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
   <symbol id="i-arbre" viewBox="0 0 24 24"><path d="M12 21v-6M12 15c-4 0-7-2.5-7-6a7 7 0 0 1 14 0c0 3.5-3 6-7 6z"/></symbol>
   <symbol id="i-vent" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7"/></symbol>
   <symbol id="i-soleil" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></symbol>
-  <symbol id="i-groupe" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.2-5.5 5-5.5s5 2.2 5 5.5M14 20c0-2.6 1.3-4.5 3-4.5s3 1.9 3 4.5"/></symbol>
   <symbol id="i-carte" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
   <symbol id="i-couverts" viewBox="0 0 24 24"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 1-3 4-3 7h3v11"/></symbol>
   <symbol id="i-calendrier" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
   <symbol id="i-traits" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
@@ -417,7 +414,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <header class="entete">
   <div class="conteneur entete__barre">
     <a class="logo" href="#haut">
-      <span class="logo__pastille" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><use href="#cedre"/></svg></span>
+      <span class="logo__arc" aria-hidden="true"><svg viewBox="0 0 64 74" focusable="false"><use href="#cedre"/></svg></span>
       <span class="logo__texte"><span class="logo__nom">Grain de Cèdre</span><span class="logo__sous">Restaurant libanais · Sens</span></span>
     </a>
     <button class="nav-bouton" type="button" aria-expanded="false" aria-controls="navigation">
@@ -443,34 +440,29 @@ document.addEventListener('DOMContentLoaded', function () {
   <!-- ============ ACCUEIL ============ -->
   <section id="accueil" class="accueil" aria-labelledby="titre-accueil">
     <div class="conteneur">
-      <div class="accueil__grille">
-        <div class="accueil__texte">
-          <p class="accueil__pastille">Restaurant libanais</p>
-          <h1 id="titre-accueil" class="accueil__titre">Grain <span>de Cèdre</span></h1>
-          <p class="accueil__lieu"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg><span>75 Grande Rue, au cœur de Sens, dans une cour arborée</span></p>
-          <p class="accueil__note"><span class="etoiles" aria-hidden="true">★★★★½</span><span>4,5/5 sur Google · 144 avis</span></p>
-          <p class="accueil__intro">Mezzes, assiettes du chef, menu découverte et vins libanais, préparés avec des produits frais et servis en terrasse, à l'abri de la cour, ou en salle.</p>
-          <div class="accueil__actions">
-            <a class="bouton bouton--plein" href="tel:+33986225666"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span>Réserver au <span class="nowrap">09 86 22 56 66</span></span></a>
-            <a class="bouton bouton--contour" href="#cuisine">Découvrir la cuisine</a>
-          </div>
-          <div class="accueil__fiche">
-            <p>
-              <span><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg> 75 Grande Rue, 89100 Sens</span>
-              <a class="accueil__itineraire" href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire</a>
-            </p>
-            <p><span><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-horloge"/></svg> Midi et soir du mardi au samedi, dimanche midi · fermé le lundi <span class="a-confirmer">(horaires à confirmer)</span></span></p>
-          </div>
-        </div>
-
-        <div class="accueil__visuel">
-          <figure class="photo photo--arche">
-            <div class="photo__art" aria-hidden="true"><svg class="ic" focusable="false"><use href="#i-arbre"/></svg></div>
-            <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · La terrasse dans la cour</span></figcaption>
-          </figure>
-        </div>
+      <p class="accueil__pastille">Restaurant libanais</p>
+      <h1 id="titre-accueil" class="accueil__titre">Grain <span>de Cèdre</span></h1>
+      <p class="accueil__intro">Mezzes, assiettes du chef, menu découverte et vins libanais, préparés avec des produits frais et servis en terrasse, à l'abri de la cour, ou en salle.</p>
+      <div class="accueil__actions">
+        <a class="bouton bouton--sumac" href="tel:+33986225666"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg><span>Réserver au <span class="nowrap">09 86 22 56 66</span></span></a>
+        <a class="bouton bouton--lien" href="#cuisine">Découvrir la cuisine</a>
+      </div>
+      <div class="accueil__fiche">
+        <p><span class="etoiles" aria-hidden="true">★★★★½</span> 4,5/5 sur Google · 144 avis</p>
+        <p>75 Grande Rue, au cœur de Sens, dans une cour arborée · <a href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener">Itinéraire</a></p>
+        <p>Midi et soir du mardi au samedi, dimanche midi · fermé le lundi <span class="a-confirmer">(horaires à confirmer)</span></p>
       </div>
     </div>
+    <div class="arcade">
+      <figure class="photo">
+        <figcaption><span class="photo__mention">Photo à fournir</span><span class="photo__sujet">La terrasse dans la cour</span></figcaption>
+      </figure>
+      <div class="arcade__centre" aria-hidden="true"><svg viewBox="0 0 64 74" focusable="false"><use href="#cedre"/></svg></div>
+      <figure class="photo">
+        <figcaption><span class="photo__mention">Photo à fournir</span><span class="photo__sujet">Une assiette de mezzes</span></figcaption>
+      </figure>
+    </div>
+    <div class="frise" aria-hidden="true"></div>
   </section>
 
   <!-- ============ LA CUISINE ============ -->
@@ -482,39 +474,40 @@ document.addEventListener('DOMContentLoaded', function () {
         <p class="chapo">Une cuisine libanaise préparée à partir de produits frais : à partager en mezzes, à savourer en assiette, ou à découvrir au fil du menu du chef.</p>
       </div>
 
+      <article class="vedette">
+        <svg viewBox="0 0 64 74" aria-hidden="true" focusable="false"><use href="#cedre"/></svg>
+        <h3>Le menu découverte</h3>
+        <p>Laissez-vous guider : le chef compose pour vous une suite de plats, sans carte à choisir.</p>
+        <p><span class="a-confirmer">(prix à confirmer)</span></p>
+      </article>
+
       <div class="plats">
-        <article class="plat plat--vedette">
-          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-etoile"/></svg></span>
-          <h3>Le menu découverte</h3>
-          <p>Laissez-vous guider : le chef compose pour vous une suite de plats, sans carte à choisir.</p>
-          <p class="plat__prix"><span class="a-confirmer">(prix à confirmer)</span></p>
-        </article>
         <article class="plat">
-          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mezze"/></svg></span>
+          <span class="plat__assiette"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mezze"/></svg></span>
           <h3>Les mezzes du chef</h3>
           <p>Une assiette de petites spécialités à partager.</p>
           <p class="plat__prix"><span class="a-confirmer">(composition et prix à confirmer)</span></p>
         </article>
         <article class="plat">
-          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-assiette"/></svg></span>
+          <span class="plat__assiette"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-assiette"/></svg></span>
           <h3>L'assiette du chef</h3>
           <p>Une assiette composée, pour un repas complet.</p>
           <p class="plat__prix"><span class="a-confirmer">(composition et prix à confirmer)</span></p>
         </article>
         <article class="plat">
-          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-feuille"/></svg></span>
+          <span class="plat__assiette"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-feuille"/></svg></span>
           <h3>L'assiette végétarienne</h3>
           <p>Une formule sans viande.</p>
           <p class="plat__prix"><span class="a-confirmer">(composition et prix à confirmer)</span></p>
         </article>
         <article class="plat">
-          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-dessert"/></svg></span>
+          <span class="plat__assiette"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-dessert"/></svg></span>
           <h3>Les desserts</h3>
           <p>Un choix de desserts, et un café gourmand.</p>
           <p class="plat__prix"><span class="a-confirmer">(carte et prix à confirmer)</span></p>
         </article>
         <article class="plat">
-          <span class="plat__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-verre"/></svg></span>
+          <span class="plat__assiette"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-verre"/></svg></span>
           <h3>Les vins libanais</h3>
           <p>Une sélection de vins du Liban pour accompagner le repas.</p>
           <p class="plat__prix"><span class="a-confirmer">(sélection à confirmer)</span></p>
@@ -523,44 +516,46 @@ document.addEventListener('DOMContentLoaded', function () {
 
       <div class="carte-a-venir">
         <p><strong>La carte complète arrive ici.</strong> Plats, menus et prix seront ajoutés à partir de la carte du restaurant : rien n'est affiché tant qu'il n'est pas validé.</p>
-        <a class="bouton bouton--contour" href="tel:+33986225666"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg>Demander la carte</a>
+        <a class="bouton bouton--cedre" href="tel:+33986225666"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg>Demander la carte</a>
       </div>
     </div>
   </section>
 
   <!-- ============ LA COUR ============ -->
   <section id="cour" class="section cour" aria-labelledby="titre-cour">
-    <div class="conteneur cour__grille">
-      <div>
-        <div class="tete">
-          <p class="surtitre">La terrasse</p>
-          <h2 id="titre-cour">Une cour cachée en plein centre-ville</h2>
-          <p class="chapo">À deux pas de la Grande Rue, le restaurant s'ouvre sur une cour arborée et intimiste, où l'on déjeune et dîne au calme dès les beaux jours.</p>
+    <div class="conteneur">
+      <div class="cour__grille">
+        <div>
+          <div class="tete">
+            <p class="surtitre">La terrasse</p>
+            <h2 id="titre-cour">Une cour cachée en plein centre-ville</h2>
+            <p class="chapo">À deux pas de la Grande Rue, le restaurant s'ouvre sur une cour arborée et intimiste, où l'on déjeune et dîne au calme dès les beaux jours.</p>
+          </div>
+          <ul class="atouts" role="list">
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-arbre"/></svg><span>Une terrasse sous les arbres, entourée de bambous</span></li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-vent"/></svg><span>Une cour intimiste, à l'abri du vent</span></li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-soleil"/></svg><span>Ombragée l'été</span></li>
+            <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-couverts"/></svg><span>Une salle intérieure pour les jours plus frais</span></li>
+          </ul>
         </div>
-        <ul class="atouts" role="list">
-          <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-arbre"/></svg><span>Une terrasse sous les arbres, entourée de bambous</span></li>
-          <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-vent"/></svg><span>Une cour intimiste, à l'abri du vent</span></li>
-          <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-soleil"/></svg><span>Ombragée l'été</span></li>
-          <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-couverts"/></svg><span>Une salle intérieure pour les jours plus frais</span></li>
-        </ul>
-        <div class="acces">
+        <div class="cour__niches">
+          <figure class="photo">
+            <figcaption><span class="photo__mention">Photo à fournir</span><span class="photo__sujet">La cour et ses bambous</span></figcaption>
+          </figure>
+          <figure class="photo">
+            <figcaption><span class="photo__mention">Photo à fournir</span><span class="photo__sujet">La salle</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="cour__encarts">
+        <div class="encart">
           <h3>Comment nous trouver</h3>
           <p>Au 75 Grande Rue, le restaurant se trouve au fond de la cour. <span class="a-confirmer">(indications d'accès à confirmer)</span></p>
         </div>
-        <div class="groupes">
+        <div class="encart">
           <h3>Groupes et événements</h3>
           <p>Repas de groupe, anniversaire, privatisation&nbsp;: appelez-nous pour en parler. <span class="a-confirmer">(offre à confirmer)</span></p>
         </div>
-      </div>
-      <div class="cour__photos">
-        <figure class="photo">
-          <div class="photo__art" aria-hidden="true"><svg class="ic" focusable="false"><use href="#i-arbre"/></svg></div>
-          <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · La cour et ses bambous</span></figcaption>
-        </figure>
-        <figure class="photo">
-          <div class="photo__art" aria-hidden="true"><svg class="ic" focusable="false"><use href="#i-mezze"/></svg></div>
-          <figcaption><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg><span><span class="photo__mention">Photo à fournir</span> · Une assiette de mezzes</span></figcaption>
-        </figure>
       </div>
     </div>
   </section>
@@ -575,7 +570,7 @@ document.addEventListener('DOMContentLoaded', function () {
       </div>
       <div class="infos__grille">
         <div class="carte-info carte-info--horaires">
-          <div class="carte-info__tete"><span class="rond"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-horloge"/></svg></span><h3>Horaires</h3></div>
+          <h3>Horaires</h3>
           <p class="carte-info__note a-confirmer">(horaires à confirmer)</p>
           <table class="horaires">
             <caption class="sr-only">Horaires d'ouverture (horaires à confirmer)</caption>
@@ -591,14 +586,14 @@ document.addEventListener('DOMContentLoaded', function () {
           </table>
         </div>
         <div class="carte-info">
-          <div class="carte-info__tete"><span class="rond"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span><h3>Adresse</h3></div>
+          <h3>Adresse</h3>
           <address>Grain de Cèdre<br>75 Grande Rue<br>89100 Sens</address>
           <p class="carte-info__note">En plein centre-ville, au fond de la cour.</p>
           <iframe class="carte-info__plan" src="https://www.openstreetmap.org/export/embed.html?bbox=3.2757%2C48.1960%2C3.2857%2C48.1985&amp;layer=mapnik&amp;marker=48.1972608%2C3.2807131" title="Plan : Grain de Cèdre, 75 Grande Rue à Sens" loading="lazy"></iframe>
-          <a class="bouton bouton--plein" href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire</a>
+          <a class="bouton bouton--cedre" href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg>Itinéraire</a>
         </div>
         <div class="carte-info">
-          <div class="carte-info__tete"><span class="rond"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-carte"/></svg></span><h3>Bon à savoir</h3></div>
+          <h3>Bon à savoir</h3>
           <ul class="puces" role="list">
             <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-couverts"/></svg>Déjeuner et dîner</li>
             <li><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-carte"/></svg>Cartes bancaires</li>
@@ -610,6 +605,8 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
   </section>
 
+  <div class="frise" aria-hidden="true"></div>
+
   <!-- ============ CONTACT ============ -->
   <section id="contact" class="section contact" aria-labelledby="titre-contact">
     <div class="conteneur">
@@ -618,24 +615,10 @@ document.addEventListener('DOMContentLoaded', function () {
         <h2 id="titre-contact">Réservez votre table</h2>
         <p class="chapo">Un coup de fil suffit pour réserver en salle ou en terrasse.</p>
       </div>
-      <div class="contact__cartes">
-        <a class="contact-carte" href="tel:+33986225666">
-          <span class="contact-carte__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-tel"/></svg></span>
-          <span class="contact-carte__type">Téléphone</span>
-          <span class="contact-carte__valeur nowrap">09 86 22 56 66</span>
-          <span class="contact-carte__action">Appeler<svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg></span>
-        </a>
-        <div class="contact-carte">
-          <span class="contact-carte__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></span>
-          <span class="contact-carte__type">E-mail</span>
-          <span class="contact-carte__valeur contact-carte__valeur--petit">Adresse e-mail à fournir</span>
-        </div>
-        <a class="contact-carte" href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener">
-          <span class="contact-carte__icone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-pin"/></svg></span>
-          <span class="contact-carte__type">Adresse</span>
-          <span class="contact-carte__valeur contact-carte__valeur--petit">75 Grande Rue, 89100 Sens</span>
-          <span class="contact-carte__action">Itinéraire<svg class="ic" aria-hidden="true" focusable="false"><use href="#i-fleche"/></svg></span>
-        </a>
+      <a class="contact__numero nowrap" href="tel:+33986225666"><span class="sr-only">Appeler le </span>09 86 22 56 66</a>
+      <div class="contact__autres">
+        <p>Adresse e-mail à fournir</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Grain%20de%20C%C3%A8dre%2C%2075%20Grande%20Rue%2C%2089100%20Sens" target="_blank" rel="noopener">75 Grande Rue, 89100 Sens · Itinéraire</a></p>
       </div>
     </div>
   </section>
@@ -644,7 +627,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <footer class="pied">
   <div class="conteneur">
     <a class="logo" href="#haut">
-      <span class="logo__pastille" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><use href="#cedre"/></svg></span>
+      <span class="logo__arc" aria-hidden="true"><svg viewBox="0 0 64 74" focusable="false"><use href="#cedre"/></svg></span>
       <span class="logo__texte"><span class="logo__nom">Grain de Cèdre</span><span class="logo__sous">Restaurant libanais · 75 Grande Rue, Sens</span></span>
     </a>
     <div class="pied__bas">
